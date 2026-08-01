@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.services.title">Leistungen — Durmisi&amp;Clean</title>
+<meta name="description" data-i18n-attr="content:meta.services.desc" content="Unterhaltsreinigung, Umzugsreinigung, Fensterreinigung, Baureinigung, Büroreinigung und Grundreinigung in der Schweiz.">
+<meta name="theme-color" content="#0c1526">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Runs before first paint.
+     1. Applies the stored language so EN visitors never see a flash of German.
+     2. Arms the scroll-reveal animation. Both use a failsafe timer: if the
+        scripts fail to load, the timer restores normal visible content rather
+        than leaving the page blank. */
+  try {
+    var d = document.documentElement;
+    if (localStorage.getItem('dc-lang') === 'en') {
+      d.className += ' i18n-boot';
+      setTimeout(function () { d.classList.remove('i18n-boot'); }, 1200);
+    }
+    d.className += ' js-reveal';
+    setTimeout(function () { if (!window.__dcReveal) d.classList.remove('js-reveal'); }, 2500);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <ul class="topbar__list">
+      <li><a data-contact-href="phoneHref" href="tel:[TELEFON]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span data-contact="phone">[TELEFON]</span></a></li>
+      <li><a data-contact-href="emailHref" href="mailto:[EMAIL]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span data-contact="email">[EMAIL]</span></a></li>
+    </ul>
+    <p class="topbar__note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span data-i18n="topbar.hours">Mo–Fr 07:00–18:00 · Sa 08:00–14:00</span>
+    </p>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect width="48" height="48" rx="13" fill="url(#mk-h)"/>
+        <path d="M24 11c4.6 5.4 7.6 9.6 7.6 13.6A7.6 7.6 0 0 1 24 32.2a7.6 7.6 0 0 1-7.6-7.6C16.4 20.6 19.4 16.4 24 11Z" fill="#fff" fill-opacity=".95"/>
+        <path d="m33.4 30.2 1.1 2.8 2.8 1.1-2.8 1.1-1.1 2.8-1.1-2.8-2.8-1.1 2.8-1.1 1.1-2.8Z" fill="#9DB0D3"/>
+        <defs><linearGradient id="mk-h" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#294070"/><stop offset="1" stop-color="#0C1526"/></linearGradient></defs>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">Durmisi<em>&amp;</em>Clean</span>
+        <span class="brand__tag" data-i18n="brand.tag">Reinigungsservice Schweiz</span>
+      </span>
+    </a>
+
+    <div class="nav-shell">
+    <nav class="nav" id="primary-nav" data-i18n-attr="aria-label:nav.menu" aria-label="Menü">
+      <a class="nav__link" href="index.html" data-i18n="nav.home">Startseite</a>
+      <a class="nav__link" href="leistungen.html" aria-current="page" data-i18n="nav.services">Leistungen</a>
+      <a class="nav__link" href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+      <a class="nav__link" href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      <a class="btn btn--accent nav__cta" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+    </nav>
+    </div>
+
+    <div class="header__actions">
+      <div class="lang" data-lang-toggle data-active="de" data-i18n-attr="aria-label:lang.switch" role="group" aria-label="Sprache wechseln">
+        <span class="lang__thumb" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="de" aria-pressed="true"  title="Deutsch">DE</button>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+      </div>
+      <a class="btn btn--accent header__cta" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+              data-i18n-attr="aria-label:nav.menu" aria-label="Menü">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim"></div>
+
+<main id="main">
+
+  <section class="pagehero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Startseite</a>
+        <span aria-hidden="true">/</span>
+        <span data-i18n="nav.services">Leistungen</span>
+      </nav>
+      <h1 data-i18n="sp.title">Unsere Leistungen im Detail</h1>
+      <p class="lead on-dark" data-i18n="sp.sub">Sechs Kernbereiche, klar abgegrenzt und sauber kalkuliert. Was Sie hier nicht finden, fragen Sie trotzdem an — vieles lässt sich einrichten.</p>
+    </div>
+  </section>
+
+  <!-- ---------- 1. Unterhaltsreinigung ---------- -->
+  <section class="section" id="unterhaltsreinigung">
+    <div class="container">
+      <div class="split split--wide-right">
+        <div class="split__media media-stack is-first" data-reveal>
+          <div class="media-frame">
+            <img src="assets/img/svc-unterhalt.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.unterhalt.name" alt="Unterhaltsreinigung">
+          </div>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">01 — <span data-i18n="svc.unterhalt.name">Unterhaltsreinigung</span></span>
+          <h2 data-i18n="svc.unterhalt.name">Unterhaltsreinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.unterhalt.long">Die Unterhaltsreinigung ist das Rückgrat einer gepflegten Liegenschaft. Wir kommen nach einem festen Rhythmus, mit einem festen Team und einer schriftlichen Leistungsliste, damit jederzeit nachvollziehbar ist, was gemacht wurde. Sie definieren die Frequenz, wir übernehmen den Rest.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i1">Böden saugen, feucht wischen und pflegen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i2">Sanitäranlagen reinigen und desinfizieren</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i3">Küchen und Aufenthaltsräume</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i4">Treppenhaus, Lift und Eingangsbereich</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i5">Abfallentsorgung und Verbrauchsmaterial</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.unterhalt.i6">Schriftlicher Leistungsnachweis pro Einsatz</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.unterhalt.ideal">Wohnbauten, Treppenhäuser, Praxen, Kanzleien, Gewerbeliegenschaften und Verwaltungen mit wiederkehrendem Bedarf.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 2. Umzugsreinigung ---------- -->
+  <section class="section section--sand" id="umzugsreinigung">
+    <div class="container">
+      <div class="split split--wide-left">
+        <div data-reveal>
+          <span class="eyebrow">02 — <span data-i18n="svc.umzug.name">Umzugsreinigung</span></span>
+          <h2 data-i18n="svc.umzug.name">Umzugsreinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.umzug.long">Die Umzugsreinigung entscheidet darüber, ob Sie Ihr Mietzinsdepot vollständig zurückerhalten. Wir reinigen nach den Kriterien, die Schweizer Verwaltungen bei der Abnahme tatsächlich prüfen — und wir übergeben auf Wunsch direkt vor Ort. Wird etwas beanstandet, kommen wir innert 48 Stunden kostenlos zurück.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i1">Küche inklusive Backofen, Dampfabzug und Kühlschrank</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i2">Bad und WC vollständig entkalkt</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i3">Fenster, Rahmen und Storen innen und aussen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i4">Böden, Sockelleisten, Türen und Schränke</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i5">Balkon, Keller und Estrich nach Absprache</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.umzug.i6">Übergabe an die Verwaltung mit Abnahmegarantie</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.umzug.ideal">Mieterinnen und Mieter, Eigentümerinnen und Eigentümer, Verwaltungen und Umzugsunternehmen.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+
+        <div class="split__media" data-reveal>
+          <div class="media-frame media-frame--tall">
+            <img src="assets/img/svc-umzug.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.umzug.name" alt="Umzugsreinigung">
+          </div>
+        </div>
+      </div>
+
+      <div class="guarantee" style="margin-top:clamp(2.5rem,5vw,4rem)" data-reveal>
+        <div class="guarantee__inner">
+          <div>
+            <span class="eyebrow on-dark" data-i18n="guar.eyebrow">Unsere Abnahmegarantie</span>
+            <h2 data-i18n="guar.title">Wir bleiben, bis die Abnahme steht.</h2>
+            <p class="lead on-dark" style="margin-top:1.1rem" data-i18n="guar.text">Bei jeder Umzugsreinigung gilt: Beanstandet die Verwaltung bei der Übergabe etwas, kommen wir kostenlos zurück und beheben es — innert 48 Stunden. Schriftlich zugesichert, in jeder Offerte.</p>
+            <ul class="checks checks--cols on-dark" style="margin-top:1.9rem">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b1">Kostenlose Nachreinigung bei Beanstandung</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b2">Innert 48 Stunden wieder vor Ort</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b3">Direkte Übergabe an die Verwaltung</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b4">Schriftlich in jeder Offerte festgehalten</span></li>
+            </ul>
+          </div>
+          <div class="guarantee__seal" aria-hidden="true">
+            <strong>100%</strong>
+            <span data-i18n="guar.seal">Abnahme oder Nachbesserung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 3. Fensterreinigung ---------- -->
+  <section class="section" id="fensterreinigung">
+    <div class="container">
+      <div class="split split--wide-right">
+        <div class="split__media media-stack is-first" data-reveal>
+          <div class="media-frame">
+            <img src="assets/img/svc-fenster.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.fenster.name" alt="Fensterreinigung">
+          </div>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">03 — <span data-i18n="svc.fenster.name">Fensterreinigung</span></span>
+          <h2 data-i18n="svc.fenster.name">Fensterreinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.fenster.long">Saubere Fenster verändern einen Raum sofort. Wir arbeiten mit entmineralisiertem Wasser und Teleskoptechnik, dadurch bleiben auch hoch gelegene Flächen streifenfrei und trocknen ohne Kalkränder. Auf Wunsch in festem Turnus zwei- bis viermal jährlich.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i1">Glasflächen innen und aussen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i2">Rahmen, Falze und Fensterbänke</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i3">Storen, Rollläden und Jalousien</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i4">Wintergärten und Glasgeländer</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i5">Schaufenster und Eingangsverglasung</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.fenster.i6">Arbeiten in der Höhe mit geeigneter Technik</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.fenster.ideal">Privathaushalte, Ladenlokale mit Schaufenstern, Büros und Liegenschaften mit grossen Glasflächen.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 4. Baureinigung ---------- -->
+  <section class="section section--sand" id="baureinigung">
+    <div class="container">
+      <div class="split split--wide-left">
+        <div data-reveal>
+          <span class="eyebrow">04 — <span data-i18n="svc.bau.name">Baureinigung</span></span>
+          <h2 data-i18n="svc.bau.name">Baureinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.bau.long">Nach dem Bau ist der Termin heilig. Wir richten uns nach Ihrem Bauprogramm und liefern in den üblichen Etappen: Grobreinigung während der Bauphase, Feinreinigung vor der Abnahme und Bauendreinigung zum Bezug. Entsorgung von Bauschutt und Schutzfolien inbegriffen.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i1">Grobreinigung während der Bauphase</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i2">Entfernen von Schutzfolien und Klebeetiketten</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i3">Zement-, Gips- und Farbrückstände</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i4">Feinreinigung aller Oberflächen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i5">Bauendreinigung zum Bezugstermin</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.bau.i6">Entsorgung von Verpackung und Bauabfall</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.bau.ideal">Generalunternehmen, Architektinnen und Architekten, Bauherrschaften sowie private Umbauprojekte.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+
+        <div class="split__media" data-reveal>
+          <div class="media-frame media-frame--tall">
+            <img src="assets/img/svc-bau.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.bau.name" alt="Baureinigung">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 5. Büroreinigung ---------- -->
+  <section class="section" id="bueroreinigung">
+    <div class="container">
+      <div class="split split--wide-right">
+        <div class="split__media media-stack is-first" data-reveal>
+          <div class="media-frame">
+            <img src="assets/img/svc-buero.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.buero.name" alt="Büroreinigung">
+          </div>
+        </div>
+        <div data-reveal>
+          <span class="eyebrow">05 — <span data-i18n="svc.buero.name">Büroreinigung</span></span>
+          <h2 data-i18n="svc.buero.name">Büroreinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.buero.long">Büroreinigung heisst vor allem: nicht stören. Wir arbeiten früh morgens, abends oder am Wochenende, halten uns an Ihre Zutrittsregeln und behandeln alles, was auf Schreibtischen liegt, als vertraulich. Alle Mitarbeitenden sind auf Verschwiegenheit verpflichtet.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i1">Arbeitsplätze, Tische und Kontaktflächen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i2">Sitzungszimmer und Empfangsbereich</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i3">Sanitäranlagen und Teeküche</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i4">Böden, Teppiche und Hartbeläge</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i5">Abfall- und Wertstoffentsorgung</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.buero.i6">Auffüllen von Papier-, Seifen- und Hygienematerial</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.buero.ideal">Büros, Arztpraxen, Anwaltskanzleien, Coworking-Flächen, Studios und Gewerberäume.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- 6. Grundreinigung ---------- -->
+  <section class="section section--sand" id="grundreinigung">
+    <div class="container">
+      <div class="split split--wide-left">
+        <div data-reveal>
+          <span class="eyebrow">06 — <span data-i18n="svc.grund.name">Grundreinigung</span></span>
+          <h2 data-i18n="svc.grund.name">Grundreinigung</h2>
+          <p class="lead" style="margin-top:1rem" data-i18n="svc.grund.long">Die Grundreinigung setzt dort an, wo die tägliche Reinigung nicht mehr hinkommt. Wir arbeiten mit Dampf, Einscheibenmaschine und Spezialmitteln — gegen Kalk, Fett, Nikotin und eingewachsenen Schmutz. Danach ist der Ausgangszustand wiederhergestellt und der Unterhalt wieder einfach.</p>
+
+          <h3 style="margin-top:2rem;font-size:var(--fs-h4)" data-i18n="sp.included">Im Leistungsumfang enthalten</h3>
+          <ul class="checks checks--cols" style="margin-top:1rem">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i1">Küche inklusive Fett- und Kalkentfernung</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i2">Bad, Fugen und Sanitärkeramik</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i3">Grundreinigung von Hartböden mit Maschine</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i4">Teppich- und Polsterreinigung nach Absprache</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i5">Türen, Schränke und Innenflächen</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="svc.grund.i6">Geruchsneutralisierung auf Wunsch</span></li>
+          </ul>
+
+          <p style="margin-top:1.6rem;font-size:var(--fs-sm);color:var(--ink-2)">
+            <strong style="color:var(--navy-700)" data-i18n="sp.ideal">Ideal für</strong>
+            <span> — </span><span data-i18n="svc.grund.ideal">Objekte nach längerer Nutzung, vor Neuvermietung, nach Mieterwechsel oder bei Übernahme einer Liegenschaft.</span>
+          </p>
+
+          <div class="btn-row" style="margin-top:1.8rem">
+            <a class="btn" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+          </div>
+        </div>
+
+        <div class="split__media" data-reveal>
+          <div class="media-frame media-frame--tall">
+            <img src="assets/img/svc-grund.jpg" width="900" height="675" loading="lazy"
+                 data-i18n-attr="alt:svc.grund.name" alt="Grundreinigung">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- CTA ---------- -->
+  <section class="section">
+    <div class="container">
+      <div class="ctaband" data-reveal>
+        <h2 data-i18n="final.title">Holen Sie sich Ihre kostenlose Offerte.</h2>
+        <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale — ohne Verpflichtung.</p>
+        <div class="btn-row">
+          <a class="btn btn--accent btn--lg" href="kontakt.html">
+            <span data-i18n="cta.quoteLong">Jetzt kostenlose Offerte anfordern</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--on-dark btn--lg" data-contact-href="phoneHref" href="tel:[TELEFON]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <span data-contact="phone">[TELEFON]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect width="48" height="48" rx="13" fill="url(#mk-f)"/>
+            <path d="M24 11c4.6 5.4 7.6 9.6 7.6 13.6A7.6 7.6 0 0 1 24 32.2a7.6 7.6 0 0 1-7.6-7.6C16.4 20.6 19.4 16.4 24 11Z" fill="#fff" fill-opacity=".95"/>
+            <path d="m33.4 30.2 1.1 2.8 2.8 1.1-2.8 1.1-1.1 2.8-1.1-2.8-2.8-1.1 2.8-1.1 1.1-2.8Z" fill="#9DB0D3"/>
+            <defs><linearGradient id="mk-f" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#4667A8"/><stop offset="1" stop-color="#16233F"/></linearGradient></defs>
+          </svg>
+          <span class="brand__text">
+            <span class="brand__name">Durmisi<em>&amp;</em>Clean</span>
+            <span class="brand__tag" data-i18n="brand.tag">Reinigungsservice Schweiz</span>
+          </span>
+        </a>
+        <p data-i18n="ft.about">Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams, verbindliche Pauschalen und eine schriftliche Abnahmegarantie.</p>
+        <div class="socials">
+          <a data-contact-href="instagram" href="#" aria-label="Instagram" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a data-contact-href="whatsappHref" href="#" aria-label="WhatsApp" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.85.83 1.98.07.14.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.87 1.8 1.14 2.07 1.27.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.35-.22.6-.13.24.09 1.56.73 1.83.87.27.13.45.2.51.31.07.11.07.63-.17 1.31Z"/></svg>
+          </a>
+          <a data-contact-href="emailHref" href="mailto:[EMAIL]" aria-label="E-Mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.services">Leistungen</h4>
+        <nav class="footer__links">
+          <a href="leistungen.html#unterhaltsreinigung" data-i18n="svc.unterhalt.name">Unterhaltsreinigung</a>
+          <a href="leistungen.html#umzugsreinigung" data-i18n="svc.umzug.name">Umzugsreinigung</a>
+          <a href="leistungen.html#fensterreinigung" data-i18n="svc.fenster.name">Fensterreinigung</a>
+          <a href="leistungen.html#baureinigung" data-i18n="svc.bau.name">Baureinigung</a>
+          <a href="leistungen.html#bueroreinigung" data-i18n="svc.buero.name">Büroreinigung</a>
+          <a href="leistungen.html#grundreinigung" data-i18n="svc.grund.name">Grundreinigung</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.company">Unternehmen</h4>
+        <nav class="footer__links">
+          <a href="index.html" data-i18n="nav.home">Startseite</a>
+          <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+          <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+          <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+          <a href="impressum.html" data-i18n="ft.legal">Impressum &amp; Datenschutz</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.contact">Kontakt</h4>
+        <div class="footer__contact">
+          <a data-contact-href="phoneHref" href="tel:[TELEFON]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <span data-contact="phone">[TELEFON]</span>
+          </a>
+          <a data-contact-href="emailHref" href="mailto:[EMAIL]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span data-contact="email">[EMAIL]</span>
+          </a>
+          <p style="display:flex;gap:.55rem;align-items:flex-start">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><span data-contact="street">[STRASSE NR]</span><br><span data-contact="city">[PLZ ORT]</span></span>
+          </p>
+          <p style="display:flex;gap:.55rem;align-items:flex-start">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="ft.hours">Mo–Fr 07:00–18:00 · Sa 08:00–14:00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Durmisi&amp;Clean. <span data-i18n="ft.rights">Alle Rechte vorbehalten.</span></p>
+      <nav>
+        <a href="impressum.html" data-i18n="ft.legal">Impressum &amp; Datenschutz</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn--ghost" data-contact-href="phoneHref" href="tel:[TELEFON]">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    <span data-i18n="cta.call">Anrufen</span>
+  </a>
+  <a class="btn btn--accent" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

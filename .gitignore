@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# Editor / tooling
+.vscode/
+.idea/
+.claude/
+
+# Vercel
+.vercel
+
+# Node (not used by the site itself, but keeps stray installs out)
+node_modules/
+npm-debug.log*

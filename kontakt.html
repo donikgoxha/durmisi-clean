@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.contact.title">Kontakt — Durmisi&amp;Clean</title>
+<meta name="description" data-i18n-attr="content:meta.contact.desc" content="Kontaktieren Sie Durmisi&amp;Clean für eine kostenlose und unverbindliche Offerte. Antwort innert 24 Stunden.">
+<meta name="theme-color" content="#0c1526">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Runs before first paint.
+     1. Applies the stored language so EN visitors never see a flash of German.
+     2. Arms the scroll-reveal animation. Both use a failsafe timer: if the
+        scripts fail to load, the timer restores normal visible content rather
+        than leaving the page blank. */
+  try {
+    var d = document.documentElement;
+    if (localStorage.getItem('dc-lang') === 'en') {
+      d.className += ' i18n-boot';
+      setTimeout(function () { d.classList.remove('i18n-boot'); }, 1200);
+    }
+    d.className += ' js-reveal';
+    setTimeout(function () { if (!window.__dcReveal) d.classList.remove('js-reveal'); }, 2500);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <ul class="topbar__list">
+      <li><a data-contact-href="phoneHref" href="tel:[TELEFON]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span data-contact="phone">[TELEFON]</span></a></li>
+      <li><a data-contact-href="emailHref" href="mailto:[EMAIL]">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span data-contact="email">[EMAIL]</span></a></li>
+    </ul>
+    <p class="topbar__note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span data-i18n="topbar.free">Offerte kostenlos &amp; unverbindlich</span>
+    </p>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect width="48" height="48" rx="13" fill="url(#mk-h)"/>
+        <path d="M24 11c4.6 5.4 7.6 9.6 7.6 13.6A7.6 7.6 0 0 1 24 32.2a7.6 7.6 0 0 1-7.6-7.6C16.4 20.6 19.4 16.4 24 11Z" fill="#fff" fill-opacity=".95"/>
+        <path d="m33.4 30.2 1.1 2.8 2.8 1.1-2.8 1.1-1.1 2.8-1.1-2.8-2.8-1.1 2.8-1.1 1.1-2.8Z" fill="#9DB0D3"/>
+        <defs><linearGradient id="mk-h" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#294070"/><stop offset="1" stop-color="#0C1526"/></linearGradient></defs>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">Durmisi<em>&amp;</em>Clean</span>
+        <span class="brand__tag" data-i18n="brand.tag">Reinigungsservice Schweiz</span>
+      </span>
+    </a>
+
+    <div class="nav-shell">
+    <nav class="nav" id="primary-nav" data-i18n-attr="aria-label:nav.menu" aria-label="Menü">
+      <a class="nav__link" href="index.html" data-i18n="nav.home">Startseite</a>
+      <a class="nav__link" href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+      <a class="nav__link" href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+      <a class="nav__link" href="kontakt.html" aria-current="page" data-i18n="nav.contact">Kontakt</a>
+      <a class="btn btn--accent nav__cta" href="#quote-form" data-i18n="cta.quote">Kostenlose Offerte</a>
+    </nav>
+    </div>
+
+    <div class="header__actions">
+      <div class="lang" data-lang-toggle data-active="de" data-i18n-attr="aria-label:lang.switch" role="group" aria-label="Sprache wechseln">
+        <span class="lang__thumb" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="de" aria-pressed="true"  title="Deutsch">DE</button>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+      </div>
+      <a class="btn btn--accent header__cta" data-contact-href="phoneHref" href="tel:[TELEFON]" data-i18n="cta.callNow">Jetzt anrufen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+              data-i18n-attr="aria-label:nav.menu" aria-label="Menü">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim"></div>
+
+<main id="main">
+
+  <section class="pagehero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Startseite</a>
+        <span aria-hidden="true">/</span>
+        <span data-i18n="nav.contact">Kontakt</span>
+      </nav>
+      <h1 data-i18n="ct.title">Sprechen wir über Ihr Objekt</h1>
+      <p class="lead on-dark" data-i18n="ct.sub">Rufen Sie an, schreiben Sie uns oder füllen Sie das Formular aus. Sie erhalten innert 24 Stunden eine Antwort — mit einer verbindlichen Pauschale, kostenlos und unverbindlich.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split split--wide-left" style="align-items:start">
+
+        <!-- ---------- FORM ---------- -->
+        <div class="panel" data-reveal>
+          <h2 style="font-size:var(--fs-h3)" data-i18n="ct.form.title">Offerte anfordern</h2>
+          <p style="margin-top:.6rem;color:var(--ink-2);font-size:var(--fs-sm)" data-i18n="ct.form.sub">Je mehr Sie uns mitgeben, desto genauer wird die Offerte. Pflichtfelder sind markiert.</p>
+
+          <div class="form-status" id="form-status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            <span></span>
+          </div>
+
+          <form class="form" id="quote-form" style="margin-top:1.5rem" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-name"><span data-i18n="ct.f.name">Name</span> <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" required autocomplete="name"
+                       data-i18n-attr="placeholder:ct.f.namePh" placeholder="Vor- und Nachname">
+                <span class="field__error"></span>
+              </div>
+              <div class="field">
+                <label for="f-email"><span data-i18n="ct.f.email">E-Mail</span> <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" required autocomplete="email"
+                       data-i18n-attr="placeholder:ct.f.emailPh" placeholder="name@beispiel.ch">
+                <span class="field__error"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="f-phone" data-i18n="ct.f.phone">Telefon</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel"
+                       data-i18n-attr="placeholder:ct.f.phonePh" placeholder="079 000 00 00">
+                <span class="field__error"></span>
+              </div>
+              <div class="field">
+                <label for="f-service" data-i18n="ct.f.service">Gewünschte Leistung</label>
+                <select id="f-service" name="service">
+                  <option value="" data-i18n="ct.f.serviceDefault">Bitte auswählen</option>
+                  <option value="unterhalt" data-i18n="svc.unterhalt.name">Unterhaltsreinigung</option>
+                  <option value="umzug" data-i18n="svc.umzug.name">Umzugsreinigung</option>
+                  <option value="fenster" data-i18n="svc.fenster.name">Fensterreinigung</option>
+                  <option value="bau" data-i18n="svc.bau.name">Baureinigung</option>
+                  <option value="buero" data-i18n="svc.buero.name">Büroreinigung</option>
+                  <option value="grund" data-i18n="svc.grund.name">Grundreinigung</option>
+                  <option value="andere" data-i18n="ct.f.serviceOther">Etwas anderes</option>
+                </select>
+                <span class="field__error"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="f-size" data-i18n="ct.f.size">Objektgrösse</label>
+                <input id="f-size" name="size" type="text"
+                       data-i18n-attr="placeholder:ct.f.sizePh" placeholder="z. B. 3,5-Zimmer-Wohnung, 92 m²">
+                <span class="field__error"></span>
+              </div>
+              <div class="field">
+                <label for="f-date" data-i18n="ct.f.date">Wunschtermin</label>
+                <input id="f-date" name="date" type="date">
+                <span class="field__error"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-message"><span data-i18n="ct.f.message">Ihre Nachricht</span> <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="f-message" name="message" required
+                        data-i18n-attr="placeholder:ct.f.messagePh"
+                        placeholder="Beschreiben Sie kurz, worum es geht: Objekt, Zustand, Termin und alles, was wir wissen sollten."></textarea>
+              <span class="field__error"></span>
+            </div>
+
+            <div class="checkbox-wrap">
+              <label class="checkbox" for="f-privacy">
+                <input id="f-privacy" name="privacy" type="checkbox" required>
+                <span data-i18n="ct.f.privacy">Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.</span>
+              </label>
+              <span class="field__error" style="margin-top:.4rem"></span>
+            </div>
+
+            <button class="btn btn--lg btn--block" type="submit">
+              <span data-i18n="ct.f.submit">Anfrage senden</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+
+            <p class="form__note" data-i18n="ct.f.note">Das Formular öffnet Ihr E-Mail-Programm mit der fertig ausgefüllten Nachricht. Lieber direkt? Rufen Sie uns an.</p>
+          </form>
+        </div>
+
+        <!-- ---------- SIDEBAR ---------- -->
+        <div style="display:grid;gap:var(--gap)">
+
+          <div class="panel" data-reveal>
+            <h2 style="font-size:var(--fs-h4);margin-bottom:1.4rem" data-i18n="ct.direct.title">Direkt erreichbar</h2>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                </span>
+                <span>
+                  <span class="contact-item__label" data-i18n="ct.direct.phone">Telefon</span>
+                  <a class="contact-item__value" data-contact-href="phoneHref" href="tel:[TELEFON]" data-contact="phone">[TELEFON]</a>
+                </span>
+              </div>
+
+              <div class="contact-item">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </span>
+                <span>
+                  <span class="contact-item__label" data-i18n="ct.direct.email">E-Mail</span>
+                  <a class="contact-item__value" data-contact-href="emailHref" href="mailto:[EMAIL]" data-contact="email">[EMAIL]</a>
+                </span>
+              </div>
+
+              <div class="contact-item">
+                <span class="icon-badge icon-badge--accent">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.85.83 1.98.07.14.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.87 1.8 1.14 2.07 1.27.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.35-.22.6-.13.24.09 1.56.73 1.83.87.27.13.45.2.51.31.07.11.07.63-.17 1.31Z"/></svg>
+                </span>
+                <span>
+                  <span class="contact-item__label" data-i18n="ct.direct.whatsapp">WhatsApp</span>
+                  <a class="contact-item__value" data-contact-href="whatsappHref" href="#" rel="noopener" target="_blank" data-contact="whatsapp">[WHATSAPP]</a>
+                </span>
+              </div>
+
+              <div class="contact-item">
+                <span class="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>
+                  <span class="contact-item__label" data-i18n="ct.direct.address">Adresse</span>
+                  <span class="contact-item__value" data-contact="street">[STRASSE NR]</span>
+                  <span class="contact-item__value" data-contact="city">[PLZ ORT]</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" data-reveal>
+            <h2 style="font-size:var(--fs-h4);margin-bottom:1.2rem" data-i18n="ct.hours.title">Öffnungszeiten</h2>
+            <ul class="hours">
+              <li><span data-i18n="ct.hours.mofr">Montag – Freitag</span><span>07:00 – 18:00</span></li>
+              <li><span data-i18n="ct.hours.sa">Samstag</span><span>08:00 – 14:00</span></li>
+              <li><span data-i18n="ct.hours.so">Sonntag</span><span data-i18n="ct.hours.sotime">Geschlossen</span></li>
+            </ul>
+            <p style="margin-top:1.1rem;font-size:var(--fs-xs);color:var(--ink-3)" data-i18n="ct.hours.note">Umzugstermine ausserhalb dieser Zeiten sind nach Absprache möglich.</p>
+          </div>
+
+          <div class="panel" data-reveal style="background:linear-gradient(130deg,var(--navy-800),var(--navy-600));border:0;color:#fff">
+            <span class="eyebrow on-dark" data-i18n="guar.eyebrow">Unsere Abnahmegarantie</span>
+            <h2 style="color:#fff;font-size:var(--fs-h4)" data-i18n="guar.title">Wir bleiben, bis die Abnahme steht.</h2>
+            <ul class="checks on-dark" style="margin-top:1.2rem">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b1">Kostenlose Nachreinigung bei Beanstandung</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b2">Innert 48 Stunden wieder vor Ort</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b4">Schriftlich in jeder Offerte festgehalten</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- Service area ---------- -->
+  <section class="section section--sand section--tight">
+    <div class="container">
+      <div class="section-head is-centered" data-reveal>
+        <span class="eyebrow is-centered" data-i18n="areas.eyebrow">Einsatzgebiet</span>
+        <h2 data-i18n="areas.title">Wo wir für Sie im Einsatz sind</h2>
+        <p class="lead" data-i18n="areas.sub">Wir arbeiten in der ganzen Region. Ist Ihr Ort nicht aufgeführt? Fragen Sie trotzdem an — meistens lässt sich etwas einrichten.</p>
+      </div>
+      <div class="areas" style="justify-content:center" data-reveal>
+        <span class="area">Zürich</span>
+        <span class="area">Winterthur</span>
+        <span class="area">Zug</span>
+        <span class="area">Luzern</span>
+        <span class="area">Aargau</span>
+        <span class="area">Baden</span>
+        <span class="area">Schaffhausen</span>
+        <span class="area">St. Gallen</span>
+        <span class="area">Thurgau</span>
+        <span class="area">Schwyz</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect width="48" height="48" rx="13" fill="url(#mk-f)"/>
+            <path d="M24 11c4.6 5.4 7.6 9.6 7.6 13.6A7.6 7.6 0 0 1 24 32.2a7.6 7.6 0 0 1-7.6-7.6C16.4 20.6 19.4 16.4 24 11Z" fill="#fff" fill-opacity=".95"/>
+            <path d="m33.4 30.2 1.1 2.8 2.8 1.1-2.8 1.1-1.1 2.8-1.1-2.8-2.8-1.1 2.8-1.1 1.1-2.8Z" fill="#9DB0D3"/>
+            <defs><linearGradient id="mk-f" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#4667A8"/><stop offset="1" stop-color="#16233F"/></linearGradient></defs>
+          </svg>
+          <span class="brand__text">
+            <span class="brand__name">Durmisi<em>&amp;</em>Clean</span>
+            <span class="brand__tag" data-i18n="brand.tag">Reinigungsservice Schweiz</span>
+          </span>
+        </a>
+        <p data-i18n="ft.about">Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams, verbindliche Pauschalen und eine schriftliche Abnahmegarantie.</p>
+        <div class="socials">
+          <a data-contact-href="instagram" href="#" aria-label="Instagram" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a data-contact-href="whatsappHref" href="#" aria-label="WhatsApp" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.85.83 1.98.07.14.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.87 1.8 1.14 2.07 1.27.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.35-.22.6-.13.24.09 1.56.73 1.83.87.27.13.45.2.51.31.07.11.07.63-.17 1.31Z"/></svg>
+          </a>
+          <a data-contact-href="emailHref" href="mailto:[EMAIL]" aria-label="E-Mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.services">Leistungen</h4>
+        <nav class="footer__links">
+          <a href="leistungen.html#unterhaltsreinigung" data-i18n="svc.unterhalt.name">Unterhaltsreinigung</a>
+          <a href="leistungen.html#umzugsreinigung" data-i18n="svc.umzug.name">Umzugsreinigung</a>
+          <a href="leistungen.html#fensterreinigung" data-i18n="svc.fenster.name">Fensterreinigung</a>
+          <a href="leistungen.html#baureinigung" data-i18n="svc.bau.name">Baureinigung</a>
+          <a href="leistungen.html#bueroreinigung" data-i18n="svc.buero.name">Büroreinigung</a>
+          <a href="leistungen.html#grundreinigung" data-i18n="svc.grund.name">Grundreinigung</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.company">Unternehmen</h4>
+        <nav class="footer__links">
+          <a href="index.html" data-i18n="nav.home">Startseite</a>
+          <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+          <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+          <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+          <a href="impressum.html" data-i18n="ft.legal">Impressum &amp; Datenschutz</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 data-i18n="ft.contact">Kontakt</h4>
+        <div class="footer__contact">
+          <a data-contact-href="phoneHref" href="tel:[TELEFON]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            <span data-contact="phone">[TELEFON]</span>
+          </a>
+          <a data-contact-href="emailHref" href="mailto:[EMAIL]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span data-contact="email">[EMAIL]</span>
+          </a>
+          <p style="display:flex;gap:.55rem;align-items:flex-start">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><span data-contact="street">[STRASSE NR]</span><br><span data-contact="city">[PLZ ORT]</span></span>
+          </p>
+          <p style="display:flex;gap:.55rem;align-items:flex-start">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-i18n="ft.hours">Mo–Fr 07:00–18:00 · Sa 08:00–14:00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Durmisi&amp;Clean. <span data-i18n="ft.rights">Alle Rechte vorbehalten.</span></p>
+      <nav>
+        <a href="impressum.html" data-i18n="ft.legal">Impressum &amp; Datenschutz</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn--ghost" data-contact-href="phoneHref" href="tel:[TELEFON]">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    <span data-i18n="cta.call">Anrufen</span>
+  </a>
+  <a class="btn btn--accent" data-contact-href="whatsappHref" href="#" rel="noopener" target="_blank" data-i18n="cta.whatsapp">WhatsApp</a>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
