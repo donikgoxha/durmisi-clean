@@ -845,8 +845,29 @@ a.contact-item__value:hover { color: var(--navy-600); text-decoration: underline
 
 .footer { background: var(--navy-950); color: rgba(255,255,255,.64); padding-block: clamp(3rem, 6vw, 4.5rem) 0; }
 .footer h4 { color: #fff; font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 1.1rem; font-weight: 700; }
-.footer__grid { display: grid; gap: clamp(2rem, 4vw, 3rem); grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
-.footer__brand { max-width: 34ch; }
+/* Explicit steps rather than auto-fit, which wrapped 3+1 between 700–1040px and
+   left the contact column orphaned on a row of its own. The brand block spans
+   the full width once there is no room for four columns. */
+.footer__grid {
+  display: grid; gap: clamp(2rem, 4vw, 3rem);
+  grid-template-columns: 1.6fr 1fr 1fr 1.25fr;
+  align-items: start;
+}
+.footer__brand { max-width: 36ch; }
+
+@media (max-width: 1040px) {
+  .footer__grid { grid-template-columns: repeat(3, 1fr); }
+  .footer__brand { grid-column: 1 / -1; max-width: 52ch; }
+}
+@media (max-width: 640px) {
+  /* Two columns: the brand rejoins the grid so it pairs up rather than
+     spanning and pushing the last column onto a row by itself. */
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
+  .footer__brand { grid-column: auto; max-width: none; }
+}
+@media (max-width: 420px) {
+  .footer__grid { grid-template-columns: 1fr; }
+}
 .footer__brand .brand__name { color: #fff; }
 .footer__brand .brand__name em { color: var(--navy-300); }
 .footer__brand .brand__tag { color: rgba(255,255,255,.45); }

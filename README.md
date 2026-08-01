@@ -141,6 +141,52 @@ Web3Forms is a drop-in change to the `form` element — happy to wire that up.
 
 - Responsive from 320 px up; no horizontal scrolling at any width.
 - Works with JavaScript disabled: all content is real HTML, German is the default.
-- Respects `prefers-reduced-motion` (animations off) and `prefers-color-scheme: dark`.
+- **Light theme only** — there is no dark mode, and the browser is told not to
+  auto-darken form controls.
+- Respects `prefers-reduced-motion` (animations off).
 - Keyboard accessible: skip link, focus trap in the mobile menu, Esc to close, visible focus rings.
+- Text contrast meets WCAG AA throughout.
 - No cookies, no analytics, no third-party requests — everything is served from this folder.
+
+---
+
+## Deploying to Vercel
+
+The repository is already initialised and committed, and `vercel.json` is in place
+(caching for assets, plus basic security headers). There is no build step — Vercel
+serves the files as they are.
+
+### 1. Create the GitHub repository
+
+On <https://github.com/new>, create an **empty** repository (no README, no
+`.gitignore` — this project already has both). Name it something URL-safe such as
+`durmisi-clean`; the `&` in the folder name is not valid in a repo name.
+
+Then, from this folder:
+
+```bash
+git remote add origin https://github.com/<your-username>/durmisi-clean.git && git push -u origin main
+```
+
+### 2. Connect Vercel
+
+1. Go to <https://vercel.com/new> and sign in with GitHub.
+2. Import the `durmisi-clean` repository.
+3. Leave every build setting at its default — Framework Preset **Other**, no build
+   command, output directory the project root. `vercel.json` handles the rest.
+4. Deploy.
+
+Every later `git push` to `main` redeploys automatically, and pull requests get
+their own preview URL.
+
+### 3. Custom domain
+
+In the Vercel project: **Settings → Domains → Add**, enter your domain, and follow
+the DNS records it shows you. HTTPS is issued automatically.
+
+### A note on URLs
+
+Internal links keep their `.html` extension (`/leistungen.html`) so the site also
+works when opened straight from the filesystem or from any plain static server.
+If you would rather have `/leistungen`, add `"cleanUrls": true` to `vercel.json` —
+Vercel will then redirect the `.html` URLs to the extensionless ones.
