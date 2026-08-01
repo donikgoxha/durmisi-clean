@@ -5,7 +5,6 @@
 # Editor / tooling
 .vscode/
 .idea/
-.claude/
 
 # Vercel
 .vercel

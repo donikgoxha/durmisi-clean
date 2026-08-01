@@ -186,7 +186,14 @@ the DNS records it shows you. HTTPS is issued automatically.
 
 ### A note on URLs
 
-Internal links keep their `.html` extension (`/leistungen.html`) so the site also
-works when opened straight from the filesystem or from any plain static server.
-If you would rather have `/leistungen`, add `"cleanUrls": true` to `vercel.json` —
-Vercel will then redirect the `.html` URLs to the extensionless ones.
+`vercel.json` sets `"cleanUrls": true`, so the live site serves
+`/leistungen` rather than `/leistungen.html`.
+
+The files themselves keep their `.html` names, and every internal link still
+points at `…​.html`. That is deliberate: it means the site also works when opened
+straight from the filesystem or from any plain static server. On Vercel those
+links resolve through a single redirect to the clean URL.
+
+If you would prefer no redirect at all, change the internal `href`s to the
+extensionless form (`href="leistungen"`), but note that opening `index.html`
+locally by double-clicking will then no longer navigate between pages.
