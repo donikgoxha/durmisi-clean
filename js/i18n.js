@@ -12,19 +12,20 @@
 
 /* --- 1. CONTACT DETAILS — REPLACE THE PLACEHOLDERS ----------------------- */
 const CONTACT = {
-  phone:      '[TELEFON]',            // e.g. '079 123 45 67'
-  phoneHref:  'tel:[TELEFON]',        // e.g. 'tel:+41791234567'
-  email:      '[EMAIL]',              // e.g. 'info@durmisi-clean.ch'
-  emailHref:  'mailto:[EMAIL]',
-  whatsapp:   '[WHATSAPP]',           // display number
-  whatsappHref: 'https://wa.me/[WHATSAPP]',   // digits only, e.g. 41791234567
-  street:     '[STRASSE NR]',
-  city:       '[PLZ ORT]',
-  country:    'Schweiz',
-  instagram:  'https://instagram.com/[INSTAGRAM]',
-  uid:        '[CHE-XXX.XXX.XXX]',
-  register:   '[HANDELSREGISTER]',
-  owner:      '[INHABER]'
+  phone:        '076 758 26 20',            // e.g. '079 123 45 67'
+  phoneHref:    'tel:+41767582620',        // e.g. 'tel:+41791234567'
+  email:        'durmisiclean@gmail.com',              // e.g. 'info@durmisi-clean.ch'
+  emailHref:    'mailto:durmisiclean@gmail.com',
+  whatsapp:     '076 758 26 20',           // display number
+  whatsappHref: 'https://wa.me/41767582620',   // digits only, e.g. 41791234567
+  street:       'Imstlerwäg 22',
+  city:         '8197 Rafz',
+  country:      'Schweiz',
+  instagram:    'https://instagram.com/[INSTAGRAM]',
+  facebook:     'https://facebook.com/[FACEBOOK]',
+  // uid:          '[CHE-XXX.XXX.XXX]',
+  // register:     '[HANDELSREGISTER]',
+  // owner:        '[INHABER]'
 };
 
 /* --- 2. DICTIONARY ------------------------------------------------------- */
@@ -37,7 +38,6 @@ const I18N = {
     'nav.about': 'Über uns',
     'nav.contact': 'Kontakt',
     'nav.menu': 'Menü',
-    'nav.close': 'Menü schliessen',
     'cta.quote': 'Kostenlose Offerte',
     'cta.quoteLong': 'Jetzt kostenlose Offerte anfordern',
     'cta.call': 'Anrufen',
@@ -55,18 +55,9 @@ const I18N = {
 
     /* ---- Home: hero ---- */
     'meta.home.title': 'Durmisi&Clean — Professionelle Reinigung in der Schweiz',
-    'meta.home.desc': 'Unterhaltsreinigung, Umzugsreinigung mit Abnahmegarantie, Fenster-, Bau-, Büro- und Grundreinigung. Kostenlose Offerte innert 24 Stunden.',
-    'hero.chip1': 'Abnahmegarantie',
-    'hero.chip2': 'Versichert & angemeldet',
-    'hero.chip3': 'Offerte in 24 Stunden',
+    'meta.home.desc': 'Unterhaltsreinigung, Umzugsreinigung, Fenster-, Bau-, Büro- und Grundreinigung in der Schweiz. Kostenlose Offerte innert 24 Stunden.',
     'hero.title': 'Wir reinigen, damit Sie <span class="hl-underline">durchatmen</span> können.',
-    'hero.sub': 'Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit schriftlicher Abnahmegarantie bei jedem Umzug.',
-    'hero.trust': 'Über 200 Kundinnen und Kunden vertrauen uns ihre Räume an.',
-
-    'kpi.years': 'Jahre Erfahrung',
-    'kpi.objects': 'Gereinigte Objekte',
-    'kpi.rating': 'Durchschnittliche Bewertung',
-    'kpi.response': 'Antwort auf Anfragen',
+    'hero.sub': 'Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit verbindlichen Pauschalpreisen.',
 
     /* ---- Home: services ---- */
     'services.eyebrow': 'Unsere Leistungen',
@@ -76,8 +67,7 @@ const I18N = {
     'svc.unterhalt.name': 'Unterhaltsreinigung',
     'svc.unterhalt.short': 'Regelmässige Reinigung nach festem Plan — täglich, wöchentlich oder nach Absprache. Immer dasselbe Team, immer derselbe Standard.',
     'svc.umzug.name': 'Umzugsreinigung',
-    'svc.umzug.badge': 'Mit Abnahmegarantie',
-    'svc.umzug.short': 'Wohnungs- und Hausreinigung bei Ein- und Auszug. Wir übergeben direkt an die Verwaltung — und bleiben, bis abgenommen ist.',
+    'svc.umzug.short': 'Wohnungs- und Hausreinigung bei Ein- und Auszug — gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.',
     'svc.fenster.name': 'Fensterreinigung',
     'svc.fenster.short': 'Glas, Rahmen, Storen und Rollläden — streifenfrei innen wie aussen, auch in schwer zugänglichen Lagen.',
     'svc.bau.name': 'Baureinigung',
@@ -102,44 +92,13 @@ const I18N = {
 
     /* ---- Home: process ---- */
     'process.eyebrow': 'So arbeiten wir',
-    'process.title': 'In vier Schritten zur sauberen Übergabe',
+    'process.title': 'In drei Schritten zum sauberen Ergebnis',
     'process.1.title': 'Anfrage',
     'process.1.text': 'Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden — auch am Wochenende.',
     'process.2.title': 'Besichtigung & Offerte',
     'process.2.text': 'Wir schauen uns das Objekt an, vor Ort oder anhand von Fotos, und senden Ihnen eine verbindliche Pauschale.',
     'process.3.title': 'Reinigung',
     'process.3.text': 'Das Team kommt zum vereinbarten Termin — mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.',
-    'process.4.title': 'Abnahme',
-    'process.4.text': 'Wir gehen gemeinsam durch. Erst wenn Sie oder die Verwaltung zufrieden sind, gilt der Auftrag als erledigt.',
-
-    /* ---- Home: guarantee ---- */
-    'guar.eyebrow': 'Unsere Abnahmegarantie',
-    'guar.title': 'Wir bleiben, bis die Abnahme steht.',
-    'guar.text': 'Bei jeder Umzugsreinigung gilt: Beanstandet die Verwaltung bei der Übergabe etwas, kommen wir kostenlos zurück und beheben es — innert 48 Stunden. Schriftlich zugesichert, in jeder Offerte.',
-    'guar.b1': 'Kostenlose Nachreinigung bei Beanstandung',
-    'guar.b2': 'Innert 48 Stunden wieder vor Ort',
-    'guar.b3': 'Direkte Übergabe an die Verwaltung',
-    'guar.b4': 'Schriftlich in jeder Offerte festgehalten',
-    'guar.seal': 'Abnahme oder Nachbesserung',
-
-    /* ---- Home: testimonials ---- */
-    'test.eyebrow': 'Kundenstimmen',
-    'test.title': 'Was unsere Kundschaft sagt',
-    'test.1.quote': 'Wohnungsübergabe nach acht Jahren — ich hatte mit Diskussionen gerechnet. Die Verwaltung hat ohne ein einziges Wort abgenommen. Genau dafür zahlt man.',
-    'test.1.name': 'M. Keller',
-    'test.1.meta': 'Privatkundin, Umzugsreinigung',
-    'test.2.quote': 'Wir lassen seit zwei Jahren unsere Büroräume reinigen. Immer dasselbe Team, immer pünktlich — am Montagmorgen merkt man sofort, dass jemand da war.',
-    'test.2.name': 'T. Brunner',
-    'test.2.meta': 'Geschäftsführer, Unterhaltsreinigung',
-    'test.3.quote': 'Nach dem Umbau sah die Wohnung aus wie eine Baustelle. Zwei Tage später war sie bezugsbereit. Faire Pauschale, keine Nachforderungen.',
-    'test.3.name': 'S. Fischer',
-    'test.3.meta': 'Bauherrin, Baureinigung',
-
-    /* ---- Home: areas ---- */
-    'areas.eyebrow': 'Einsatzgebiet',
-    'areas.title': 'Wo wir für Sie im Einsatz sind',
-    'areas.sub': 'Wir arbeiten in der ganzen Region. Ist Ihr Ort nicht aufgeführt? Fragen Sie trotzdem an — meistens lässt sich etwas einrichten.',
-
     /* ---- FAQ ---- */
     'faq.eyebrow': 'Häufige Fragen',
     'faq.title': 'Antworten, bevor Sie fragen müssen',
@@ -152,7 +111,7 @@ const I18N = {
     'faq.4.q': 'Sind Sie versichert?',
     'faq.4.a': 'Ja. Wir verfügen über eine Betriebshaftpflichtversicherung. Sämtliche Mitarbeitenden sind ordentlich angestellt, unfallversichert und über uns sozialversichert.',
     'faq.5.q': 'Was, wenn ich mit dem Ergebnis nicht zufrieden bin?',
-    'faq.5.a': 'Melden Sie sich innert 48 Stunden nach der Reinigung. Wir kommen zurück und reinigen die beanstandeten Stellen kostenlos nach. Bei Umzugsreinigungen gilt zusätzlich unsere Abnahmegarantie.',
+    'faq.5.a': 'Melden Sie sich einfach bei uns. Wir besprechen die betroffenen Stellen und finden gemeinsam eine Lösung.',
     'faq.6.q': 'Muss ich während der Reinigung anwesend sein?',
     'faq.6.a': 'Nein. Viele Kundinnen und Kunden übergeben uns einen Schlüssel. Wir dokumentieren jede Schlüsselübergabe schriftlich und bewahren Schlüssel gesichert auf.',
 
@@ -177,14 +136,14 @@ const I18N = {
     'svc.unterhalt.i5': 'Abfallentsorgung und Verbrauchsmaterial',
     'svc.unterhalt.i6': 'Schriftlicher Leistungsnachweis pro Einsatz',
 
-    'svc.umzug.long': 'Die Umzugsreinigung entscheidet darüber, ob Sie Ihr Mietzinsdepot vollständig zurückerhalten. Wir reinigen nach den Kriterien, die Schweizer Verwaltungen bei der Abnahme tatsächlich prüfen — und wir übergeben auf Wunsch direkt vor Ort. Wird etwas beanstandet, kommen wir innert 48 Stunden kostenlos zurück.',
+    'svc.umzug.long': 'Die Umzugsreinigung sorgt dafür, dass Ihre Wohnung beim Auszug in einwandfreiem Zustand ist. Wir reinigen nach einer festen, schriftlichen Checkliste — gründlich, mit System und pünktlich zum vereinbarten Termin.',
     'svc.umzug.ideal': 'Mieterinnen und Mieter, Eigentümerinnen und Eigentümer, Verwaltungen und Umzugsunternehmen.',
     'svc.umzug.i1': 'Küche inklusive Backofen, Dampfabzug und Kühlschrank',
     'svc.umzug.i2': 'Bad und WC vollständig entkalkt',
     'svc.umzug.i3': 'Fenster, Rahmen und Storen innen und aussen',
     'svc.umzug.i4': 'Böden, Sockelleisten, Türen und Schränke',
     'svc.umzug.i5': 'Balkon, Keller und Estrich nach Absprache',
-    'svc.umzug.i6': 'Übergabe an die Verwaltung mit Abnahmegarantie',
+    'svc.umzug.i6': 'Schriftliche Checkliste für den ganzen Einsatz',
 
     'svc.fenster.long': 'Saubere Fenster verändern einen Raum sofort. Wir arbeiten mit entmineralisiertem Wasser und Teleskoptechnik, dadurch bleiben auch hoch gelegene Flächen streifenfrei und trocknen ohne Kalkränder. Auf Wunsch in festem Turnus zwei- bis viermal jährlich.',
     'svc.fenster.ideal': 'Privathaushalte, Ladenlokale mit Schaufenstern, Büros und Liegenschaften mit grossen Glasflächen.',
@@ -246,10 +205,10 @@ const I18N = {
 
     'ab.promise.eyebrow': 'Qualitätsversprechen',
     'ab.promise.title': 'Woran Sie uns messen dürfen',
-    'ab.promise.p': 'Jeder Auftrag folgt einer schriftlichen Checkliste, die auf Ihr Objekt zugeschnitten ist. Nach jedem Einsatz wird sie abgezeichnet. Stimmt etwas nicht, gilt eine einfache Regel: Sie melden sich innert 48 Stunden, wir kommen zurück, und die Nachreinigung ist kostenlos.',
+    'ab.promise.p': 'Jeder Auftrag folgt einer schriftlichen Checkliste, die auf Ihr Objekt zugeschnitten ist. So ist für Sie und für uns jederzeit nachvollziehbar, was gemacht wurde.',
     'ab.promise.i1': 'Schriftliche Checkliste für jedes Objekt',
     'ab.promise.i2': 'Fester Ansprechpartner, direkt erreichbar',
-    'ab.promise.i3': 'Kostenlose Nachreinigung innert 48 Stunden',
+    'ab.promise.i3': 'Schriftliche Offerte vor jedem Auftragsstart',
     'ab.promise.i4': 'Betriebshaftpflicht und angemeldetes Personal',
     'ab.promise.i5': 'Ökologische, biologisch abbaubare Mittel',
     'ab.promise.i6': 'Eigene Maschinen und eigenes Material',
@@ -300,6 +259,13 @@ const I18N = {
     'ct.hours.sotime': 'Geschlossen',
     'ct.hours.note': 'Umzugstermine ausserhalb dieser Zeiten sind nach Absprache möglich.',
 
+    'meta.404.title': 'Seite nicht gefunden — Durmisi&Clean',
+    'meta.404.desc': 'Diese Seite existiert nicht. Zur Startseite oder direkt Kontakt aufnehmen.',
+    'e404.code': 'Fehler 404',
+    'e404.title': 'Diese Seite gibt es nicht.',
+    'e404.text': 'Der Link ist vielleicht veraltet oder enthält einen Tippfehler. Über das Menü finden Sie alles — oder melden Sie sich direkt bei uns.',
+    'e404.home': 'Zur Startseite',
+
     /* ---- Legal page ---- */
     'meta.legal.title': 'Impressum & Datenschutz — Durmisi&Clean',
     'meta.legal.desc': 'Impressum und Datenschutzerklärung von Durmisi&Clean.',
@@ -309,7 +275,6 @@ const I18N = {
     'lg.imp.company': 'Firma',
     'lg.imp.owner': 'Inhaber',
     'lg.imp.address': 'Adresse',
-    'lg.imp.contact': 'Kontakt',
     'lg.imp.uid': 'UID-Nummer',
     'lg.imp.register': 'Handelsregister',
     'lg.dp.title': 'Datenschutzerklärung',
@@ -329,7 +294,7 @@ const I18N = {
     'lg.dp.7.text': 'Wir können diese Datenschutzerklärung jederzeit anpassen. Massgebend ist die auf dieser Seite veröffentlichte Fassung.',
 
     /* ---- Footer ---- */
-    'ft.about': 'Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams, verbindliche Pauschalen und eine schriftliche Abnahmegarantie.',
+    'ft.about': 'Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams und verbindliche Pauschalen.',
     'ft.services': 'Leistungen',
     'ft.company': 'Unternehmen',
     'ft.contact': 'Kontakt',
@@ -346,7 +311,6 @@ const I18N = {
     'nav.about': 'About us',
     'nav.contact': 'Contact',
     'nav.menu': 'Menu',
-    'nav.close': 'Close menu',
     'cta.quote': 'Free quote',
     'cta.quoteLong': 'Request your free quote',
     'cta.call': 'Call us',
@@ -364,18 +328,9 @@ const I18N = {
 
     /* ---- Home: hero ---- */
     'meta.home.title': 'Durmisi&Clean — Professional Cleaning Services in Switzerland',
-    'meta.home.desc': 'Maintenance cleaning, move-out cleaning with handover guarantee, window, construction, office and deep cleaning. Free quote within 24 hours.',
-    'hero.chip1': 'Handover guarantee',
-    'hero.chip2': 'Insured & registered',
-    'hero.chip3': 'Quote within 24 hours',
+    'meta.home.desc': 'Maintenance cleaning, move-out cleaning, window, construction, office and deep cleaning in Switzerland. Free quote within 24 hours.',
     'hero.title': 'We clean, so you can <span class="hl-underline">breathe easy</span>.',
-    'hero.sub': 'Professional cleaning for private homes, offices and properties — thorough, punctual, and backed by a written handover guarantee on every move-out clean.',
-    'hero.trust': 'Over 200 customers trust us with their spaces.',
-
-    'kpi.years': 'Years of experience',
-    'kpi.objects': 'Properties cleaned',
-    'kpi.rating': 'Average rating',
-    'kpi.response': 'Reply to enquiries',
+    'hero.sub': 'Professional cleaning for private homes, offices and properties — thorough, punctual, and backed by binding flat-rate prices.',
 
     /* ---- Home: services ---- */
     'services.eyebrow': 'Our Services',
@@ -385,8 +340,7 @@ const I18N = {
     'svc.unterhalt.name': 'Maintenance Cleaning',
     'svc.unterhalt.short': 'Regular cleaning on a fixed schedule — daily, weekly or as agreed. The same team every time, the same standard every time.',
     'svc.umzug.name': 'Move-Out Cleaning',
-    'svc.umzug.badge': 'Handover guarantee',
-    'svc.umzug.short': 'Apartment and house cleaning when moving in or out. We hand over directly to the property manager — and stay until it is signed off.',
+    'svc.umzug.short': 'Apartment and house cleaning when moving in or out — thorough and checklist-based, so everything is ready when you move.',
     'svc.fenster.name': 'Window Cleaning',
     'svc.fenster.short': 'Glass, frames, blinds and shutters — streak-free inside and out, including hard-to-reach positions.',
     'svc.bau.name': 'Construction Cleaning',
@@ -411,44 +365,13 @@ const I18N = {
 
     /* ---- Home: process ---- */
     'process.eyebrow': 'How we work',
-    'process.title': 'Four steps to a clean handover',
+    'process.title': 'Three steps to a spotless result',
     'process.1.title': 'Enquiry',
     'process.1.text': 'Get in touch by phone, form or WhatsApp. We reply within 24 hours — weekends included.',
     'process.2.title': 'Visit & quote',
     'process.2.text': 'We look at the property, either on site or from your photos, and send you a binding flat-rate quote.',
     'process.3.title': 'The clean',
     'process.3.text': 'The team arrives at the agreed time — with their own machines, their own materials and a clear checklist.',
-    'process.4.title': 'Sign-off',
-    'process.4.text': 'We walk through it together. The job is only finished once you or the property manager are satisfied.',
-
-    /* ---- Home: guarantee ---- */
-    'guar.eyebrow': 'Our handover guarantee',
-    'guar.title': 'We stay until the handover is signed off.',
-    'guar.text': 'On every move-out clean: if the property manager flags anything at handover, we come back free of charge and put it right — within 48 hours. Guaranteed in writing, in every quote.',
-    'guar.b1': 'Free re-clean if anything is flagged',
-    'guar.b2': 'Back on site within 48 hours',
-    'guar.b3': 'Direct handover to the property manager',
-    'guar.b4': 'Written into every single quote',
-    'guar.seal': 'Signed off or we return',
-
-    /* ---- Home: testimonials ---- */
-    'test.eyebrow': 'Testimonials',
-    'test.title': 'What our customers say',
-    'test.1.quote': 'Handover after eight years in the flat — I was braced for an argument. The property manager signed off without a single comment. That is exactly what you pay for.',
-    'test.1.name': 'M. Keller',
-    'test.1.meta': 'Private customer, move-out cleaning',
-    'test.2.quote': 'They have cleaned our offices for two years. Same team every time, always punctual — on Monday morning you can tell straight away that someone has been in.',
-    'test.2.name': 'T. Brunner',
-    'test.2.meta': 'Managing Director, maintenance cleaning',
-    'test.3.quote': 'After the renovation the flat looked like a building site. Two days later it was ready to move into. Fair flat rate, no add-on charges.',
-    'test.3.name': 'S. Fischer',
-    'test.3.meta': 'Property owner, construction cleaning',
-
-    /* ---- Home: areas ---- */
-    'areas.eyebrow': 'Service area',
-    'areas.title': 'Where we work',
-    'areas.sub': 'We cover the whole region. Your town not on the list? Ask anyway — we can usually make it work.',
-
     /* ---- FAQ ---- */
     'faq.eyebrow': 'Frequently asked',
     'faq.title': 'Answers before you have to ask',
@@ -461,7 +384,7 @@ const I18N = {
     'faq.4.q': 'Are you insured?',
     'faq.4.a': 'Yes. We carry public liability insurance. All staff are properly employed, covered by accident insurance and registered for social insurance through us.',
     'faq.5.q': 'What if I am not happy with the result?',
-    'faq.5.a': 'Let us know within 48 hours of the clean. We come back and re-clean the areas in question free of charge. On move-out cleans our handover guarantee applies on top of this.',
+    'faq.5.a': 'Just get in touch. We will discuss the affected areas together and find a solution.',
     'faq.6.q': 'Do I need to be there during the clean?',
     'faq.6.a': 'No. Many customers simply give us a key. Every key handover is documented in writing and keys are kept secured.',
 
@@ -486,14 +409,14 @@ const I18N = {
     'svc.unterhalt.i5': 'Waste disposal and consumables',
     'svc.unterhalt.i6': 'Written record of work for every visit',
 
-    'svc.umzug.long': 'The move-out clean decides whether you get your full rental deposit back. We clean to the criteria Swiss property managers actually check at handover — and we can be there in person for the sign-off. If anything is flagged, we return within 48 hours at no cost.',
+    'svc.umzug.long': 'The move-out clean gets your apartment into spotless condition before you leave. We work from a fixed, written checklist — thorough, systematic, and on time for the agreed date.',
     'svc.umzug.ideal': 'Tenants, owners, property management companies and removal firms.',
     'svc.umzug.i1': 'Kitchen including oven, extractor hood and fridge',
     'svc.umzug.i2': 'Bathroom and WC fully descaled',
     'svc.umzug.i3': 'Windows, frames and blinds inside and out',
     'svc.umzug.i4': 'Floors, skirting boards, doors and cupboards',
     'svc.umzug.i5': 'Balcony, cellar and attic as agreed',
-    'svc.umzug.i6': 'Handover to the property manager with guarantee',
+    'svc.umzug.i6': 'Written checklist covering the whole job',
 
     'svc.fenster.long': 'Clean windows change a room instantly. We work with demineralised water and telescopic systems, so even high panes dry streak-free and without limescale marks. Available as a fixed cycle two to four times a year.',
     'svc.fenster.ideal': 'Private homes, shops with display windows, offices and properties with large glazed areas.',
@@ -555,10 +478,10 @@ const I18N = {
 
     'ab.promise.eyebrow': 'Quality promise',
     'ab.promise.title': 'What you can hold us to',
-    'ab.promise.p': 'Every job follows a written checklist tailored to your property, signed off after each visit. If something is not right, one simple rule applies: tell us within 48 hours, we come back, and the re-clean is free.',
+    'ab.promise.p': 'Every job follows a written checklist tailored to your property, so it is always clear — for you and for us — exactly what was done.',
     'ab.promise.i1': 'A written checklist for every property',
     'ab.promise.i2': 'One named contact, directly reachable',
-    'ab.promise.i3': 'Free re-clean within 48 hours',
+    'ab.promise.i3': 'Written quote before every job starts',
     'ab.promise.i4': 'Liability insurance and registered staff',
     'ab.promise.i5': 'Eco-friendly, biodegradable products',
     'ab.promise.i6': 'Our own machines and our own materials',
@@ -609,6 +532,13 @@ const I18N = {
     'ct.hours.sotime': 'Closed',
     'ct.hours.note': 'Move-out appointments outside these hours can be arranged.',
 
+    'meta.404.title': 'Page not found — Durmisi&Clean',
+    'meta.404.desc': 'This page does not exist. Head back to the homepage or get in touch directly.',
+    'e404.code': 'Error 404',
+    'e404.title': 'This page does not exist.',
+    'e404.text': 'The link may be out of date or contain a typo. The menu will get you anywhere — or just contact us directly.',
+    'e404.home': 'Back to homepage',
+
     /* ---- Legal page ---- */
     'meta.legal.title': 'Legal notice & privacy — Durmisi&Clean',
     'meta.legal.desc': 'Legal notice and privacy policy of Durmisi&Clean.',
@@ -618,7 +548,6 @@ const I18N = {
     'lg.imp.company': 'Company',
     'lg.imp.owner': 'Owner',
     'lg.imp.address': 'Address',
-    'lg.imp.contact': 'Contact',
     'lg.imp.uid': 'VAT / UID number',
     'lg.imp.register': 'Commercial register',
     'lg.dp.title': 'Privacy policy',
@@ -638,7 +567,7 @@ const I18N = {
     'lg.dp.7.text': 'We may update this privacy policy at any time. The version published on this page applies.',
 
     /* ---- Footer ---- */
-    'ft.about': 'A family-run cleaning company for private homes, offices and properties. Fixed teams, binding flat rates and a written handover guarantee.',
+    'ft.about': 'A family-run cleaning company for private homes, offices and properties. Fixed teams and binding flat rates.',
     'ft.services': 'Services',
     'ft.company': 'Company',
     'ft.contact': 'Contact',

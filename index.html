@@ -4,28 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.home.title">Durmisi&amp;Clean — Professionelle Reinigung in der Schweiz</title>
-<meta name="description" data-i18n-attr="content:meta.home.desc" content="Unterhaltsreinigung, Umzugsreinigung mit Abnahmegarantie, Fenster-, Bau-, Büro- und Grundreinigung. Kostenlose Offerte innert 24 Stunden.">
+<meta name="description" data-i18n-attr="content:meta.home.desc" content="Unterhaltsreinigung, Umzugsreinigung, Fenster-, Bau-, Büro- und Grundreinigung in der Schweiz. Kostenlose Offerte innert 24 Stunden.">
 <meta name="theme-color" content="#0c1526">
 <meta property="og:title" content="Durmisi&amp;Clean — Professionelle Reinigung in der Schweiz">
-<meta property="og:description" content="Gründlich, pünktlich und mit schriftlicher Abnahmegarantie. Kostenlose Offerte innert 24 Stunden.">
+<meta property="og:description" content="Gründlich, pünktlich und mit verbindlichen Pauschalpreisen. Kostenlose Offerte innert 24 Stunden.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:locale:alternate" content="en_GB">
 <meta property="og:image" content="assets/img/hero.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "professionalService",
+  "name": "Durmisi&Clean",
+  "description": "Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften in der Schweiz.",
+  "telephone": "[TELEFON]",
+  "email": "[EMAIL]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[STRASSE NR]",
+    "addressLocality": "[PLZ ORT]",
+    "addressCountry": "CH"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00", "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00", "closes": "14:00"
+    }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unterhaltsreinigung" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Umzugsreinigung" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fensterreinigung" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Baureinigung" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Büroreinigung" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grundreinigung" } }
+  ]
+}
+</script>
 <script>
-  /* Runs before first paint.
-     1. Applies the stored language so EN visitors never see a flash of German.
-     2. Arms the scroll-reveal animation. Both use a failsafe timer: if the
-        scripts fail to load, the timer restores normal visible content rather
-        than leaving the page blank. */
+  /* Runs before first paint: applies the stored language so English visitors
+     never see a flash of German. The timer is a failsafe — if i18n.js fails to
+     load, it un-hides the page rather than leaving it blank. */
   try {
     var d = document.documentElement;
     if (localStorage.getItem('dc-lang') === 'en') {
       d.className += ' i18n-boot';
       setTimeout(function () { d.classList.remove('i18n-boot'); }, 1200);
     }
-    d.className += ' js-reveal';
-    setTimeout(function () { if (!window.__dcReveal) d.classList.remove('js-reveal'); }, 2500);
   } catch (e) {}
 </script>
 </head>
@@ -80,8 +116,8 @@
     <div class="header__actions">
       <div class="lang" data-lang-toggle data-active="de" data-i18n-attr="aria-label:lang.switch" role="group" aria-label="Sprache wechseln">
         <span class="lang__thumb" aria-hidden="true"></span>
-        <button class="lang__btn" type="button" data-lang="de" aria-pressed="true"  title="Deutsch">DE</button>
-        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+        <button class="lang__btn" type="button" data-lang="de" aria-pressed="true"  data-i18n-attr="title:lang.de" title="Deutsch">DE</button>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" data-i18n-attr="title:lang.en" title="English">EN</button>
       </div>
 
       <a class="btn btn--accent header__cta" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
@@ -102,26 +138,10 @@
     <div class="hero__bg">
       <img src="assets/img/hero.jpg" width="1920" height="1280" alt="" fetchpriority="high">
     </div>
-    <span class="hero__glow" aria-hidden="true"></span>
     <div class="container">
       <div class="hero__inner">
-        <div class="hero__chips">
-          <span class="chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <span data-i18n="hero.chip1">Abnahmegarantie</span>
-          </span>
-          <span class="chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-            <span data-i18n="hero.chip2">Versichert &amp; angemeldet</span>
-          </span>
-          <span class="chip">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <span data-i18n="hero.chip3">Offerte in 24 Stunden</span>
-          </span>
-        </div>
-
         <h1 data-i18n="hero.title">Wir reinigen, damit Sie <span class="hl-underline">durchatmen</span> können.</h1>
-        <p class="hero__sub" data-i18n="hero.sub">Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit schriftlicher Abnahmegarantie bei jedem Umzug.</p>
+        <p class="hero__sub" data-i18n="hero.sub">Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit verbindlichen Pauschalpreisen.</p>
 
         <div class="btn-row">
           <a class="btn btn--accent btn--lg" href="kontakt.html">
@@ -133,50 +153,14 @@
             <span data-i18n="cta.callNow">Jetzt anrufen</span>
           </a>
         </div>
-
-        <div class="hero__trust">
-          <span class="stars" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-          </span>
-          <span data-i18n="hero.trust">Über 200 Kundinnen und Kunden vertrauen uns ihre Räume an.</span>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== KPIs ====================
-       PLACEHOLDER FIGURES — replace 12 / 850 / 4.9 / 24 with your real numbers,
-       or delete any KPI you cannot substantiate.
-  -->
-  <div class="container">
-    <div class="kpis" data-reveal>
-      <div class="kpi">
-        <p class="kpi__num" data-count="12" data-suffix="+">12<small>+</small></p>
-        <p class="kpi__label" data-i18n="kpi.years">Jahre Erfahrung</p>
-      </div>
-      <div class="kpi">
-        <p class="kpi__num" data-count="850" data-suffix="+">850<small>+</small></p>
-        <p class="kpi__label" data-i18n="kpi.objects">Gereinigte Objekte</p>
-      </div>
-      <div class="kpi">
-        <p class="kpi__num" data-count="4.9" data-decimals="1">4,9</p>
-        <p class="kpi__label" data-i18n="kpi.rating">Durchschnittliche Bewertung</p>
-      </div>
-      <div class="kpi">
-        <p class="kpi__num" data-count="24" data-suffix="h">24<small>h</small></p>
-        <p class="kpi__label" data-i18n="kpi.response">Antwort auf Anfragen</p>
-      </div>
-    </div>
-  </div>
-
   <!-- ==================== SERVICES ==================== -->
   <section class="section" id="leistungen">
     <div class="container">
-      <div class="section-head is-centered" data-reveal>
+      <div class="section-head is-centered">
         <span class="eyebrow is-centered" data-i18n="services.eyebrow">Unsere Leistungen</span>
         <h2 data-i18n="services.title">Ein Partner für jede Art von Reinigung</h2>
         <p class="lead" data-i18n="services.sub">Vom wöchentlichen Unterhalt bis zur Bauendreinigung — alles aus einer Hand, mit festen Teams und verbindlichen Pauschalpreisen.</p>
@@ -184,7 +168,7 @@
 
       <div class="grid grid--auto">
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
             <img src="assets/img/svc-unterhalt.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.unterhalt.name" alt="Unterhaltsreinigung">
@@ -199,15 +183,14 @@
           </div>
         </article>
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
-            <span class="card__badge" data-i18n="svc.umzug.badge">Mit Abnahmegarantie</span>
             <img src="assets/img/svc-umzug.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.umzug.name" alt="Umzugsreinigung">
           </div>
           <div class="card__body">
             <h3 data-i18n="svc.umzug.name">Umzugsreinigung</h3>
-            <p data-i18n="svc.umzug.short">Wohnungs- und Hausreinigung bei Ein- und Auszug. Wir übergeben direkt an die Verwaltung — und bleiben, bis abgenommen ist.</p>
+            <p data-i18n="svc.umzug.short">Wohnungs- und Hausreinigung bei Ein- und Auszug — gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.</p>
             <a class="link-arrow" href="leistungen.html#umzugsreinigung">
               <span data-i18n="cta.details">Mehr erfahren</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -215,7 +198,7 @@
           </div>
         </article>
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
             <img src="assets/img/svc-fenster.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.fenster.name" alt="Fensterreinigung">
@@ -230,7 +213,7 @@
           </div>
         </article>
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
             <img src="assets/img/svc-bau.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.bau.name" alt="Baureinigung">
@@ -245,7 +228,7 @@
           </div>
         </article>
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
             <img src="assets/img/svc-buero.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.buero.name" alt="Büroreinigung">
@@ -260,7 +243,7 @@
           </div>
         </article>
 
-        <article class="card" data-reveal>
+        <article class="card">
           <div class="card__media">
             <img src="assets/img/svc-grund.jpg" width="900" height="675" loading="lazy"
                  data-i18n-attr="alt:svc.grund.name" alt="Grundreinigung">
@@ -283,21 +266,21 @@
   <section class="section section--sand">
     <div class="container">
       <div class="split split--wide-right">
-        <div class="split__media media-stack is-first" data-reveal>
+        <div class="split__media media-stack is-first">
           <div class="media-frame media-frame--tall">
             <img src="assets/img/about.jpg" width="1200" height="900" loading="lazy" alt="">
           </div>
         </div>
 
         <div>
-          <div class="section-head" data-reveal>
+          <div class="section-head">
             <span class="eyebrow" data-i18n="why.eyebrow">Warum Durmisi&amp;Clean</span>
             <h2 data-i18n="why.title">Gründe, warum Kundinnen und Kunden bleiben</h2>
             <p class="lead" data-i18n="why.sub">Reinigung ist Vertrauenssache. Wir haben unseren Betrieb darauf ausgerichtet, dieses Vertrauen jedes Mal zu bestätigen.</p>
           </div>
 
           <div class="grid grid--auto-sm">
-            <div class="feature" data-reveal>
+            <div class="feature">
               <span class="icon-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </span>
@@ -305,7 +288,7 @@
               <p data-i18n="why.1.text">Bei Ihnen arbeitet ein festes, geschultes Team. Sie müssen nichts zweimal erklären, und niemand Fremdes steht unangekündigt vor der Tür.</p>
             </div>
 
-            <div class="feature" data-reveal>
+            <div class="feature">
               <span class="icon-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
               </span>
@@ -313,7 +296,7 @@
               <p data-i18n="why.2.text">Betriebshaftpflichtversicherung, ordentlich angestelltes Personal und vollständige Sozialabgaben. Ohne Wenn und Aber.</p>
             </div>
 
-            <div class="feature" data-reveal>
+            <div class="feature">
               <span class="icon-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l3-1.5L10 22l3-1.5L16 22l3-1.5L22 22V2l-3 1.5L16 2l-3 1.5L10 2 7 3.5 4 2Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
               </span>
@@ -321,7 +304,7 @@
               <p data-i18n="why.3.text">Sie erhalten den Preis schriftlich, bevor wir beginnen. Keine Stundenaufrechnung, keine Zuschläge, keine Überraschungen auf der Rechnung.</p>
             </div>
 
-            <div class="feature" data-reveal>
+            <div class="feature">
               <span class="icon-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
               </span>
@@ -337,154 +320,24 @@
   <!-- ==================== PROCESS ==================== -->
   <section class="section section--dark">
     <div class="container">
-      <div class="section-head is-centered" data-reveal>
+      <div class="section-head is-centered">
         <span class="eyebrow on-dark is-centered" data-i18n="process.eyebrow">So arbeiten wir</span>
-        <h2 data-i18n="process.title">In vier Schritten zur sauberen Übergabe</h2>
+        <h2 data-i18n="process.title">In drei Schritten zum sauberen Ergebnis</h2>
       </div>
 
       <div class="steps">
-        <div class="step" data-reveal>
+        <div class="step">
           <h3 data-i18n="process.1.title">Anfrage</h3>
           <p data-i18n="process.1.text">Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden — auch am Wochenende.</p>
         </div>
-        <div class="step" data-reveal>
+        <div class="step">
           <h3 data-i18n="process.2.title">Besichtigung &amp; Offerte</h3>
           <p data-i18n="process.2.text">Wir schauen uns das Objekt an, vor Ort oder anhand von Fotos, und senden Ihnen eine verbindliche Pauschale.</p>
         </div>
-        <div class="step" data-reveal>
+        <div class="step">
           <h3 data-i18n="process.3.title">Reinigung</h3>
           <p data-i18n="process.3.text">Das Team kommt zum vereinbarten Termin — mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.</p>
         </div>
-        <div class="step" data-reveal>
-          <h3 data-i18n="process.4.title">Abnahme</h3>
-          <p data-i18n="process.4.text">Wir gehen gemeinsam durch. Erst wenn Sie oder die Verwaltung zufrieden sind, gilt der Auftrag als erledigt.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== GUARANTEE ==================== -->
-  <section class="section">
-    <div class="container">
-      <div class="guarantee" data-reveal>
-        <div class="guarantee__inner">
-          <div>
-            <span class="eyebrow on-dark" data-i18n="guar.eyebrow">Unsere Abnahmegarantie</span>
-            <h2 data-i18n="guar.title">Wir bleiben, bis die Abnahme steht.</h2>
-            <p class="lead on-dark" style="margin-top:1.1rem" data-i18n="guar.text">Bei jeder Umzugsreinigung gilt: Beanstandet die Verwaltung bei der Übergabe etwas, kommen wir kostenlos zurück und beheben es — innert 48 Stunden. Schriftlich zugesichert, in jeder Offerte.</p>
-
-            <ul class="checks checks--cols on-dark" style="margin-top:1.9rem">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b1">Kostenlose Nachreinigung bei Beanstandung</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b2">Innert 48 Stunden wieder vor Ort</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b3">Direkte Übergabe an die Verwaltung</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="guar.b4">Schriftlich in jeder Offerte festgehalten</span></li>
-            </ul>
-
-            <div class="btn-row" style="margin-top:2rem">
-              <a class="btn btn--accent" href="leistungen.html#umzugsreinigung" data-i18n="cta.details">Mehr erfahren</a>
-              <a class="btn btn--on-dark" href="kontakt.html" data-i18n="cta.quote">Kostenlose Offerte</a>
-            </div>
-          </div>
-
-          <div class="guarantee__seal" aria-hidden="true">
-            <strong>100%</strong>
-            <span data-i18n="guar.seal">Abnahme oder Nachbesserung</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TESTIMONIALS ====================
-       PLACEHOLDER REVIEWS — these are examples written for layout purposes.
-       Replace them with real, attributable customer feedback before publishing.
-  -->
-  <section class="section section--sand">
-    <div class="container">
-      <div class="section-head is-centered" data-reveal>
-        <span class="eyebrow is-centered" data-i18n="test.eyebrow">Kundenstimmen</span>
-        <h2 data-i18n="test.title">Was unsere Kundschaft sagt</h2>
-      </div>
-
-      <div class="grid grid--auto">
-        <article class="quote" data-reveal>
-          <span class="quote__stars" aria-label="5/5">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-          </span>
-          <blockquote data-i18n="test.1.quote">Wohnungsübergabe nach acht Jahren — ich hatte mit Diskussionen gerechnet. Die Verwaltung hat ohne ein einziges Wort abgenommen. Genau dafür zahlt man.</blockquote>
-          <div class="quote__by">
-            <span class="quote__avatar" aria-hidden="true">MK</span>
-            <span>
-              <span class="quote__name" data-i18n="test.1.name">M. Keller</span>
-              <span class="quote__meta" data-i18n="test.1.meta">Privatkundin, Umzugsreinigung</span>
-            </span>
-          </div>
-        </article>
-
-        <article class="quote" data-reveal>
-          <span class="quote__stars" aria-label="5/5">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-          </span>
-          <blockquote data-i18n="test.2.quote">Wir lassen seit zwei Jahren unsere Büroräume reinigen. Immer dasselbe Team, immer pünktlich — am Montagmorgen merkt man sofort, dass jemand da war.</blockquote>
-          <div class="quote__by">
-            <span class="quote__avatar" aria-hidden="true">TB</span>
-            <span>
-              <span class="quote__name" data-i18n="test.2.name">T. Brunner</span>
-              <span class="quote__meta" data-i18n="test.2.meta">Geschäftsführer, Unterhaltsreinigung</span>
-            </span>
-          </div>
-        </article>
-
-        <article class="quote" data-reveal>
-          <span class="quote__stars" aria-label="5/5">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2Z"/></svg>
-          </span>
-          <blockquote data-i18n="test.3.quote">Nach dem Umbau sah die Wohnung aus wie eine Baustelle. Zwei Tage später war sie bezugsbereit. Faire Pauschale, keine Nachforderungen.</blockquote>
-          <div class="quote__by">
-            <span class="quote__avatar" aria-hidden="true">SF</span>
-            <span>
-              <span class="quote__name" data-i18n="test.3.name">S. Fischer</span>
-              <span class="quote__meta" data-i18n="test.3.meta">Bauherrin, Baureinigung</span>
-            </span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SERVICE AREA ====================
-       PLACEHOLDER LOCATIONS — replace with the towns you actually serve.
-  -->
-  <section class="section section--tight">
-    <div class="container">
-      <div class="section-head is-centered" data-reveal>
-        <span class="eyebrow is-centered" data-i18n="areas.eyebrow">Einsatzgebiet</span>
-        <h2 data-i18n="areas.title">Wo wir für Sie im Einsatz sind</h2>
-        <p class="lead" data-i18n="areas.sub">Wir arbeiten in der ganzen Region. Ist Ihr Ort nicht aufgeführt? Fragen Sie trotzdem an — meistens lässt sich etwas einrichten.</p>
-      </div>
-      <div class="areas" style="justify-content:center" data-reveal>
-        <span class="area">Zürich</span>
-        <span class="area">Winterthur</span>
-        <span class="area">Zug</span>
-        <span class="area">Luzern</span>
-        <span class="area">Aargau</span>
-        <span class="area">Baden</span>
-        <span class="area">Schaffhausen</span>
-        <span class="area">St. Gallen</span>
-        <span class="area">Thurgau</span>
-        <span class="area">Schwyz</span>
       </div>
     </div>
   </section>
@@ -492,13 +345,13 @@
   <!-- ==================== FAQ ==================== -->
   <section class="section section--mist">
     <div class="container">
-      <div class="section-head is-centered" data-reveal>
+      <div class="section-head is-centered">
         <span class="eyebrow is-centered" data-i18n="faq.eyebrow">Häufige Fragen</span>
         <h2 data-i18n="faq.title">Antworten, bevor Sie fragen müssen</h2>
       </div>
 
       <div class="faq">
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
             <span data-i18n="faq.1.q">Was kostet eine Umzugsreinigung?</span>
             <span class="faq__icon" aria-hidden="true"></span>
@@ -508,7 +361,7 @@
           </div></div>
         </div>
 
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
             <span data-i18n="faq.2.q">Wie schnell können Sie kommen?</span>
             <span class="faq__icon" aria-hidden="true"></span>
@@ -518,7 +371,7 @@
           </div></div>
         </div>
 
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
             <span data-i18n="faq.3.q">Bringen Sie Material und Maschinen selbst mit?</span>
             <span class="faq__icon" aria-hidden="true"></span>
@@ -528,7 +381,7 @@
           </div></div>
         </div>
 
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
             <span data-i18n="faq.4.q">Sind Sie versichert?</span>
             <span class="faq__icon" aria-hidden="true"></span>
@@ -538,17 +391,17 @@
           </div></div>
         </div>
 
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
             <span data-i18n="faq.5.q">Was, wenn ich mit dem Ergebnis nicht zufrieden bin?</span>
             <span class="faq__icon" aria-hidden="true"></span>
           </button>
           <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5" aria-hidden="true"><div>
-            <p data-i18n="faq.5.a">Melden Sie sich innert 48 Stunden nach der Reinigung. Wir kommen zurück und reinigen die beanstandeten Stellen kostenlos nach. Bei Umzugsreinigungen gilt zusätzlich unsere Abnahmegarantie.</p>
+            <p data-i18n="faq.5.a">Melden Sie sich einfach bei uns. Wir besprechen die betroffenen Stellen und finden gemeinsam eine Lösung.</p>
           </div></div>
         </div>
 
-        <div class="faq__item" data-reveal>
+        <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
             <span data-i18n="faq.6.q">Muss ich während der Reinigung anwesend sein?</span>
             <span class="faq__icon" aria-hidden="true"></span>
@@ -564,7 +417,7 @@
   <!-- ==================== FINAL CTA ==================== -->
   <section class="section">
     <div class="container">
-      <div class="ctaband" data-reveal>
+      <div class="ctaband">
         <h2 data-i18n="final.title">Holen Sie sich Ihre kostenlose Offerte.</h2>
         <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale — ohne Verpflichtung.</p>
         <div class="btn-row">
@@ -600,10 +453,13 @@
             <span class="brand__tag" data-i18n="brand.tag">Reinigungsservice Schweiz</span>
           </span>
         </a>
-        <p data-i18n="ft.about">Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams, verbindliche Pauschalen und eine schriftliche Abnahmegarantie.</p>
+        <p data-i18n="ft.about">Familiengeführter Reinigungsbetrieb für Privathaushalte, Büros und Liegenschaften. Feste Teams und verbindliche Pauschalen.</p>
         <div class="socials">
           <a data-contact-href="instagram" href="#" aria-label="Instagram" rel="noopener" target="_blank">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a data-contact-href="facebook" href="#" aria-label="Facebook" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
           </a>
           <a data-contact-href="whatsappHref" href="#" aria-label="WhatsApp" rel="noopener" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.95 1.36-.5.05-.96.23-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.6.46.22.53.76 1.85.83 1.98.07.14.11.29.02.47-.09.18-.14.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.15.27.67 1.1 1.43 1.78.98.87 1.8 1.14 2.07 1.27.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.35-.22.6-.13.24.09 1.56.73 1.83.87.27.13.45.2.51.31.07.11.07.63-.17 1.31Z"/></svg>
@@ -648,12 +504,12 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span data-contact="email">[EMAIL]</span>
           </a>
-          <p style="display:flex;gap:.55rem;align-items:flex-start">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             <span><span data-contact="street">[STRASSE NR]</span><br><span data-contact="city">[PLZ ORT]</span></span>
           </p>
-          <p style="display:flex;gap:.55rem;align-items:flex-start">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px;color:var(--navy-300);flex:none;margin-top:.28rem"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             <span data-i18n="ft.hours">Mo–Fr 07:00–18:00 · Sa 08:00–14:00</span>
           </p>
         </div>
