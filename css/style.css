@@ -207,6 +207,10 @@ p  { text-wrap: pretty; }
 @media (max-width: 1040px) { .grid--4 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 460px)  { .grid--4 { grid-template-columns: 1fr; } }
 
+/* Three-item grids: three across, then straight to one. 2+1 strands the last. */
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .grid--3 { grid-template-columns: 1fr; } }
+
 /* Sits inside one half of a split, so two across is the most it should be */
 .grid--auto-sm { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 520px) { .grid--auto-sm { grid-template-columns: 1fr; } }

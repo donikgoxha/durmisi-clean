@@ -183,14 +183,14 @@ const I18N = {
 
     /* ---- About page ---- */
     'meta.about.title': 'Über uns — Durmisi&Clean',
-    'meta.about.desc': 'Wer hinter Durmisi&Clean steht: ein familiengeführter Reinigungsbetrieb mit festen Teams, fairen Anstellungen und verbindlichen Preisen.',
+    'meta.about.desc': 'Fachmann Betriebsunterhalt EFZ mit 10 Jahren Berufserfahrung und einem festen Team von vier Mitarbeitenden. Reinigung nach Schweizer Berufsstandard.',
     'ab.title': 'Ein Familienbetrieb, kein Callcenter',
     'ab.sub': 'Bei uns nimmt eine Person ab, die das Objekt danach auch tatsächlich kennt. Das ist der ganze Unterschied.',
     'ab.story.eyebrow': 'Unsere Geschichte',
-    'ab.story.title': 'Angefangen mit einem Auto und einer Checkliste',
-    'ab.story.p1': 'Durmisi&Clean ist aus der einfachen Beobachtung entstanden, dass Reinigung selten am Putzen scheitert — sondern an Terminen, die nicht eingehalten werden, an wechselnden Gesichtern und an Rechnungen, die höher ausfallen als besprochen.',
-    'ab.story.p2': 'Also haben wir es andersherum aufgebaut: feste Teams pro Kunde, verbindliche Pauschalen vor dem ersten Einsatz und eine schriftliche Checkliste, an der man uns messen kann. Gewachsen sind wir seither fast ausschliesslich über Weiterempfehlungen.',
-    'ab.story.p3': 'Heute betreuen wir Privathaushalte, Büros und Liegenschaften in der ganzen Region — mit demselben Anspruch wie am ersten Tag: Was wir zusagen, halten wir.',
+    'ab.story.title': 'Gelernt, geprüft, seit zehn Jahren im Einsatz',
+    'ab.story.p1': 'Hinter Durmisi&Clean steht eine abgeschlossene Ausbildung zum Fachmann Betriebsunterhalt EFZ — dem eidgenössischen Fähigkeitszeugnis für Gebäudeunterhalt und Reinigung — sowie zehn Jahre Berufserfahrung in genau diesem Feld.',
+    'ab.story.p2': 'Diese Ausbildung ist der Unterschied zwischen Putzen und Werterhalt. Wer weiss, welches Mittel auf welchen Belag gehört, verhindert Schäden, statt sie zu verursachen — an Parkett, Naturstein, Chromstahl oder empfindlichen Oberflächen.',
+    'ab.story.p3': 'Heute arbeiten vier feste Mitarbeitende im Team. Alle sind ordentlich angestellt, eingearbeitet und einem festen Kundenkreis zugeteilt: Privathaushalte, Büros und Liegenschaften in der ganzen Region.',
 
     'ab.values.eyebrow': 'Wofür wir stehen',
     'ab.values.title': 'Vier Grundsätze, die nicht verhandelbar sind',
@@ -213,9 +213,20 @@ const I18N = {
     'ab.promise.i5': 'Ökologische, biologisch abbaubare Mittel',
     'ab.promise.i6': 'Eigene Maschinen und eigenes Material',
 
+    'ab.qual.eyebrow': 'Qualifikation',
+    'ab.qual.title': 'Gelernt, nicht angelernt',
+    'ab.qual.p': 'Reinigung ist in der Schweiz ein Lehrberuf. Der Unterschied zwischen Putzen und fachgerechtem Werterhalt liegt in Materialkunde, Dosierung, Maschinenführung und Arbeitssicherheit — alles Teil der eidgenössischen Ausbildung.',
+    'ab.q1.title': 'Fachmann Betriebsunterhalt EFZ',
+    'ab.q1.text': 'Abgeschlossene Schweizer Berufslehre mit eidgenössischem Fähigkeitszeugnis, Fachrichtung Gebäudeunterhalt: Reinigung, Instandhaltung, Materialkunde und Arbeitssicherheit.',
+    'ab.q2.title': '10 Jahre Berufserfahrung',
+    'ab.q2.text': 'Zehn Jahre in der Reinigungs- und Unterhaltsbranche — von der wiederkehrenden Unterhaltsreinigung über Umzugsobjekte bis zur Bauendreinigung.',
+    'ab.q3.title': 'Vier feste Mitarbeitende',
+    'ab.q3.text': 'Ein kleines, eingespieltes Team statt wechselnder Aushilfen. Alle ordentlich angestellt, unfallversichert und laufend eingearbeitet.',
+    'ab.promise.i7': 'Ausgeführt nach Schweizer Berufsstandard (EFZ)',
+
     'ab.team.eyebrow': 'Das Team',
     'ab.team.title': 'Menschen, die Sie wiedererkennen',
-    'ab.team.p': 'Unsere Mitarbeitenden sind fest angestellt, geschult und einem festen Kundenkreis zugeteilt. Sie kennen Ihr Objekt, Ihre Wünsche und die Stellen, auf die es Ihnen ankommt. Neue Mitarbeitende arbeiten die ersten Einsätze immer begleitet.',
+    'ab.team.p': 'Vier feste Mitarbeitende, fest angestellt und einem festen Kundenkreis zugeteilt. Sie kennen Ihr Objekt, Ihre Wünsche und die Stellen, auf die es Ihnen ankommt. Neue Mitarbeitende arbeiten die ersten Einsätze immer begleitet.',
 
     /* ---- Contact page ---- */
     'meta.contact.title': 'Kontakt — Durmisi&Clean',
@@ -456,14 +467,14 @@ const I18N = {
 
     /* ---- About page ---- */
     'meta.about.title': 'About us — Durmisi&Clean',
-    'meta.about.desc': 'The people behind Durmisi&Clean: a family-run cleaning company with fixed teams, fair employment and binding prices.',
+    'meta.about.desc': 'Fachmann Betriebsunterhalt EFZ with 10 years of professional experience and a permanent team of four. Cleaning to Swiss trade standard.',
     'ab.title': 'A family business, not a call centre',
     'ab.sub': 'When you call, you reach someone who will actually know your property afterwards. That is the whole difference.',
     'ab.story.eyebrow': 'Our story',
-    'ab.story.title': 'It started with one car and a checklist',
-    'ab.story.p1': 'Durmisi&Clean grew out of a simple observation: cleaning rarely fails at the cleaning. It fails at appointments that are not kept, at faces that keep changing, and at invoices that come in higher than agreed.',
-    'ab.story.p2': 'So we built it the other way round: a fixed team per customer, a binding flat rate before the first visit, and a written checklist you can hold us to. Since then we have grown almost entirely through recommendations.',
-    'ab.story.p3': 'Today we look after private homes, offices and properties across the region — with the same standard as on day one: what we promise, we deliver.',
+    'ab.story.title': 'Qualified, certified, ten years in the field',
+    'ab.story.p1': 'Behind Durmisi&Clean is a completed apprenticeship as Fachmann Betriebsunterhalt EFZ — the Swiss federal certificate of proficiency in building maintenance and cleaning — plus ten years of professional experience in exactly this field.',
+    'ab.story.p2': 'That training is the difference between wiping down and protecting value. Knowing which product belongs on which surface prevents damage rather than causing it — on parquet, natural stone, stainless steel or delicate finishes.',
+    'ab.story.p3': 'Today the team is four permanent staff. All properly employed, fully trained in and assigned to a fixed group of customers: private homes, offices and properties across the region.',
 
     'ab.values.eyebrow': 'What we stand for',
     'ab.values.title': 'Four principles that are not up for negotiation',
@@ -486,9 +497,20 @@ const I18N = {
     'ab.promise.i5': 'Eco-friendly, biodegradable products',
     'ab.promise.i6': 'Our own machines and our own materials',
 
+    'ab.qual.eyebrow': 'Qualification',
+    'ab.qual.title': 'Trained, not improvised',
+    'ab.qual.p': 'In Switzerland, cleaning is a formally taught trade. What separates wiping down from proper upkeep is knowledge of materials, dosage, machine handling and workplace safety — all part of the federal apprenticeship.',
+    'ab.q1.title': 'Fachmann Betriebsunterhalt EFZ',
+    'ab.q1.text': 'A completed Swiss apprenticeship with the federal certificate of proficiency (EFZ) in building maintenance: cleaning, upkeep, materials and workplace safety.',
+    'ab.q2.title': '10 years in the trade',
+    'ab.q2.text': 'Ten years across cleaning and building maintenance — from recurring maintenance work to move-out properties and final construction cleans.',
+    'ab.q3.title': 'Four permanent staff',
+    'ab.q3.text': 'A small, settled team rather than rotating temps. All properly employed, accident-insured and continuously trained.',
+    'ab.promise.i7': 'Carried out to Swiss trade standard (EFZ)',
+
     'ab.team.eyebrow': 'The team',
     'ab.team.title': 'People you will recognise',
-    'ab.team.p': 'Our staff are permanently employed, trained, and assigned to a fixed group of customers. They know your property, your preferences and the spots that matter to you. New team members are always accompanied on their first visits.',
+    'ab.team.p': 'Four permanent members of staff, each assigned to a fixed group of customers. They know your property, your preferences and the spots that matter to you. New staff are always accompanied on their first jobs.',
 
     /* ---- Contact page ---- */
     'meta.contact.title': 'Contact — Durmisi&Clean',
