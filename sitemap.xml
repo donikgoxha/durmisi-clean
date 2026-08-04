@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace REPLACE-WITH-YOUR-DOMAIN.ch with the real domain once it is live. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN.ch/</loc>
+    <loc>https://durmisi-clean.ch/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN.ch/leistungen</loc>
+    <loc>https://durmisi-clean.ch/leistungen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN.ch/ueber-uns</loc>
+    <loc>https://durmisi-clean.ch/ueber-uns</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN.ch/kontakt</loc>
+    <loc>https://durmisi-clean.ch/kontakt</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -9,10 +9,14 @@ leistungen.html     The six services in detail
 ueber-uns.html      About
 kontakt.html        Contact + quote form
 impressum.html      Impressum & Datenschutz
+404.html            Not-found page
 css/style.css       All styling
 js/i18n.js          German/English text + contact details
-js/main.js          Navigation, animations, accordion, form
+js/main.js          Navigation, accordion, form
 assets/img/         Photography
+robots.txt          Crawler rules — contains a placeholder domain
+sitemap.xml         URL list — contains a placeholder domain
+vercel.json         Clean URLs, caching, security headers
 ```
 
 ## Running it locally
@@ -27,10 +31,23 @@ Then open <http://localhost:5173>.
 
 ## ⚠️ Replace before going live
 
-I had no real data for these, so they are placeholders or examples. **Each one needs your
-input before the site is published.**
+Phone, e-mail and address are the real ones. The items below are **not** yet filled in.
 
-### 1. Contact details — the only file you need to touch
+### 1. Social profiles — still placeholders
+
+In the `CONTACT` object at the top of **`js/i18n.js`**:
+
+```js
+instagram: 'https://instagram.com/[INSTAGRAM]',
+facebook:  'https://facebook.com/[FACEBOOK]',
+```
+
+Put the real profile URLs in, or delete the two lines. Any `CONTACT` value that still
+contains a `[BRACKETED]` token is treated as unfilled and the matching icon is dropped from
+the footer at runtime, so the site never ships a dead link — but it also means neither icon
+appears until you fill them in.
+
+### 2. Contact details — the only file you need to touch
 
 All of it lives in one object at the top of **`js/i18n.js`**. Change it there once and every
 page updates — header, footer, contact page, Impressum, the mobile call bar, and the form's
@@ -38,57 +55,42 @@ recipient address.
 
 ```js
 const CONTACT = {
-  phone:        '079 123 45 67',
-  phoneHref:    'tel:+41791234567',
-  email:        'info@durmisi-clean.ch',
-  emailHref:    'mailto:info@durmisi-clean.ch',
-  whatsapp:     '079 123 45 67',
-  whatsappHref: 'https://wa.me/41791234567',   // digits only, no + or spaces
-  street:       'Musterstrasse 12',
-  city:         '8000 Zürich',
-  instagram:    'https://instagram.com/durmisiclean',
-  uid:          'CHE-123.456.789',
-  register:     'Handelsregister des Kantons Zürich',
-  owner:        'Vorname Nachname'
+  phone:        '076 758 26 20',
+  phoneHref:    'tel:+41767582620',
+  email:        'durmisiclean@gmail.com',
+  emailHref:    'mailto:durmisiclean@gmail.com',
+  whatsapp:     '076 758 26 20',
+  whatsappHref: 'https://wa.me/41767582620',   // digits only, no + or spaces
+  street:       'Imstlerwäg 22',
+  city:         '8197 Rafz',
+  country:      'Schweiz'
 };
 ```
 
-### 2. The numbers on the home page — currently invented
+The phone number and address also appear in the structured data (`<script type="application/
+ld+json">`) at the top of `index.html` and in the German fallback text throughout the HTML.
+If you change them here, change them there too.
 
-The four figures in the stats strip (`index.html`, marked with a comment) are **placeholders
-I made up to build the layout**: 12 years, 850 properties, 4.9 rating, 24 h response.
+### 3. Impressum — UID, Handelsregister and Inhaber are commented out
 
-Replace them with your real figures, or delete any KPI you cannot back up. Each one appears
-twice — as `data-count="12"` and as the visible text — change both.
+`impressum.html` has ready-made rows for the owner's name, the UID number and the commercial
+register entry, currently commented out because there was nothing to put in them. Uncomment
+them and add the values (and the matching `CONTACT` entries) once the company details are
+final.
 
-### 3. Testimonials — currently examples, not real reviews
+### 4. Opening hours
 
-The three testimonials on the home page are **written examples**, not real customers.
-Publishing invented reviews as though they were genuine is misleading and, in Switzerland,
-exposes you under unfair-competition rules (UWG).
+Currently Mon–Fri 07:00–18:00, Sat 08:00–14:00, Sunday closed. Change in `kontakt.html`,
+under `topbar.hours` / `ft.hours` in `js/i18n.js`, and in the `openingHoursSpecification`
+block of the structured data in `index.html`.
 
-Replace them with real, attributable feedback before launch, or delete the whole section —
-it is one clearly marked block in `index.html`. The German and English text lives under the
-`test.*` keys in `js/i18n.js`.
-
-### 4. Service area — a guess
-
-The town list (Zürich, Winterthur, Zug, Luzern …) is my assumption. It appears on
-`index.html` and `kontakt.html`. Swap in the places you actually cover — this also matters
-for local search.
-
-### 5. Opening hours
-
-Currently Mon–Fri 07:00–18:00, Sat 08:00–14:00, Sunday closed. Change in `kontakt.html`
-and under `topbar.hours` / `ft.hours` in `js/i18n.js`.
-
-### 6. Legal text
+### 5. Legal text
 
 `impressum.html` follows the usual Swiss pattern and reflects how this site actually behaves
 (no cookies, no tracking, form opens your own mail client). It is a solid starting point,
 **not legal advice** — worth a review once your company details are final.
 
-### 7. Photography
+### 6. Photography
 
 The photos are Unsplash stock, free for commercial use. Real photos of your own team,
 vans and finished work will convert considerably better. Replace the files in
@@ -183,6 +185,18 @@ their own preview URL.
 
 In the Vercel project: **Settings → Domains → Add**, enter your domain, and follow
 the DNS records it shows you. HTTPS is issued automatically.
+
+The site is already written for **`durmisi-clean.ch`** on the apex (no `www.`). That
+domain appears in `robots.txt`, `sitemap.xml`, the `rel="canonical"` and `og:` tags of
+the four indexable pages, and the structured data in `index.html`. If the site ends up
+on a different domain — or on `www.` — every one of those has to be updated:
+
+```bash
+grep -rl 'durmisi-clean.ch' --include='*.html' --include='*.txt' --include='*.xml' .
+```
+
+Note that `js/i18n.js` also contains `durmisiclean@gmail.com`, which is the e-mail
+address, not the domain — leave it alone.
 
 ### A note on URLs
 

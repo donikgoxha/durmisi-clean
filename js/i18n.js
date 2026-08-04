@@ -38,6 +38,7 @@ const I18N = {
     'nav.about': 'Über uns',
     'nav.contact': 'Kontakt',
     'nav.menu': 'Menü',
+    'nav.skip': 'Zum Inhalt springen',
     'cta.quote': 'Kostenlose Offerte',
     'cta.quoteLong': 'Jetzt kostenlose Offerte anfordern',
     'cta.call': 'Anrufen',
@@ -322,6 +323,7 @@ const I18N = {
     'nav.about': 'About us',
     'nav.contact': 'Contact',
     'nav.menu': 'Menu',
+    'nav.skip': 'Skip to content',
     'cta.quote': 'Free quote',
     'cta.quoteLong': 'Request your free quote',
     'cta.call': 'Call us',
@@ -613,6 +615,13 @@ const I18N = {
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* private mode */ }
   }
 
+  /* A CONTACT value still carrying a [BRACKETED] token has never been filled in.
+     Linking to it would ship a dead link, so the element is removed instead —
+     better a missing icon than one that lands the visitor on a 404. */
+  function isPlaceholder(v) {
+    return typeof v === 'string' && /\[[^\]]*\]/.test(v);
+  }
+
   /** Fill every [data-contact] / [data-contact-href] node from CONTACT. */
   function applyContact(root) {
     (root || document).querySelectorAll('[data-contact]').forEach(function (el) {
@@ -621,6 +630,10 @@ const I18N = {
     });
     (root || document).querySelectorAll('[data-contact-href]').forEach(function (el) {
       var v = CONTACT[el.getAttribute('data-contact-href')];
+      if (isPlaceholder(v)) {
+        el.remove();
+        return;
+      }
       if (v != null) el.setAttribute('href', v);
     });
   }

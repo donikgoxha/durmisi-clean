@@ -230,6 +230,12 @@
                 var el = form.elements[name];
                 return el ? String(el.value || '').trim() : '';
             };
+            /* <input type="date"> always hands back ISO. The e-mail is read by a
+               Swiss reader, so write the date the way they write it. */
+            var swissDate = function (iso) {
+                var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+                return m ? m[3] + '.' + m[2] + '.' + m[1] : iso;
+            };
             var serviceEl = form.elements['service'];
             var serviceText = serviceEl && serviceEl.selectedIndex > 0 ? serviceEl.options[serviceEl.selectedIndex].text : '';
 
@@ -260,7 +266,7 @@
             if (get('phone')) lines.push(L.phone + ': ' + get('phone'));
             if (serviceText) lines.push(L.service + ': ' + serviceText);
             if (get('size')) lines.push(L.size + ': ' + get('size'));
-            if (get('date')) lines.push(L.date + ': ' + get('date'));
+            if (get('date')) lines.push(L.date + ': ' + swissDate(get('date')));
             lines.push('', L.msg + ':', get('message'), '', '—', L.sent);
 
             var to = (window.DC && window.DC.contact && window.DC.contact.email) || '';
