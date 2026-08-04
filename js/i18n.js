@@ -1,23 +1,10 @@
-/* ==========================================================================
-   Durmisi&Clean — Internationalisation (DE / EN)
-   --------------------------------------------------------------------------
-   HOW TO EDIT
-   1. Contact details: change the CONTACT object below. It is the ONLY place
-      real phone numbers, e-mail and address need to be written. Everything on
-      every page updates automatically.
-   2. Text: each entry exists twice, once under `de` and once under `en`.
-      The German string is also written literally in the HTML so the site is
-      correct with JavaScript disabled.
-   ========================================================================== */
-
-/* --- 1. CONTACT DETAILS — REPLACE THE PLACEHOLDERS ----------------------- */
 const CONTACT = {
-  phone:        '076 758 26 20',            // e.g. '079 123 45 67'
-  phoneHref:    'tel:+41767582620',        // e.g. 'tel:+41791234567'
-  email:        'durmisiclean@gmail.com',              // e.g. 'info@durmisi-clean.ch'
+  phone:        '076 758 26 20',
+  phoneHref:    'tel:+41767582620',
+  email:        'durmisiclean@gmail.com',
   emailHref:    'mailto:durmisiclean@gmail.com',
-  whatsapp:     '076 758 26 20',           // display number
-  whatsappHref: 'https://wa.me/41767582620',   // digits only, e.g. 41791234567
+  whatsapp:     '076 758 26 20',
+  whatsappHref: 'https://wa.me/41767582620',
   street:       'Imstlerwäg 22',
   city:         '8197 Rafz',
   country:      'Schweiz',
@@ -28,7 +15,6 @@ const CONTACT = {
   // owner:        '[INHABER]'
 };
 
-/* --- 2. DICTIONARY ------------------------------------------------------- */
 const I18N = {
   de: {
     /* ---- Global ---- */
