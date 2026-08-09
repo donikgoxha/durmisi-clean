@@ -759,6 +759,14 @@ a.contact-item__value:hover { color: var(--navy-600); text-decoration: underline
 .footer__bottom nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
 .footer__bottom a { color: rgba(255,255,255,.62); text-decoration: none; }
 .footer__bottom a:hover { color: #fff; text-decoration: underline; }
+.footer__credit {
+  padding-block: 0 1.5rem; text-align: center;
+  font-size: var(--fs-xs); color: rgba(255,255,255,.38); letter-spacing: .03em;
+}
+.footer__credit a { color: rgba(255,255,255,.62); text-decoration: none; transition: color .2s; }
+.footer__credit a:hover { color: #fff; text-decoration: underline; }
+.footer__credit strong { font-weight: 600; }
+.footer__credit sup { font-size: .68em; margin-left: .12em; }
 
 /* Floating mobile call bar */
 .callbar {
