@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /impressum
 
 Sitemap: https://durmisi-clean.ch/sitemap.xml

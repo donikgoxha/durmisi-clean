@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Durmisi&Clean — Interface behaviour
+   Durmisi&Clean interface behaviour
    Sticky header · mobile drawer · FAQ · form
    Depends on js/i18n.js for window.DC.t() and window.DC.contact.
    ========================================================================== */
@@ -53,9 +53,7 @@
             nav.classList.add('is-open');
             if (scrim) scrim.classList.add('is-open');
             document.body.classList.add('is-locked');
-            /* The closed drawer is `visibility: hidden`, and a hidden element cannot
-               take focus. Force a style flush so the drawer is actually visible
-               before we move focus into it. */
+            /* Flush styles: the closed drawer is `visibility: hidden` and can't take focus. */
             void nav.offsetWidth;
             var first = nav.querySelector(FOCUSABLE);
             if (first) first.focus();
@@ -230,8 +228,7 @@
                 var el = form.elements[name];
                 return el ? String(el.value || '').trim() : '';
             };
-            /* <input type="date"> always hands back ISO. The e-mail is read by a
-               Swiss reader, so write the date the way they write it. */
+            /* Date inputs hand back ISO; write it the Swiss way for the reader. */
             var swissDate = function (iso) {
                 var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
                 return m ? m[3] + '.' + m[2] + '.' + m[1] : iso;
@@ -267,16 +264,13 @@
             if (serviceText) lines.push(L.service + ': ' + serviceText);
             if (get('size')) lines.push(L.size + ': ' + get('size'));
             if (get('date')) lines.push(L.date + ': ' + swissDate(get('date')));
-            lines.push('', L.msg + ':', get('message'), '', '—', L.sent);
+            lines.push('', L.msg + ':', get('message'), '', '--', L.sent);
 
             var to = (window.DC && window.DC.contact && window.DC.contact.email) || '';
-            var subject = L.subj + (serviceText ? ' — ' + serviceText : '') + (get('name') ? ' — ' + get('name') : '');
+            var subject = L.subj + (serviceText ? ' | ' + serviceText : '') + (get('name') ? ' | ' + get('name') : '');
             var href = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
 
-            /* Confirm to the visitor FIRST. Handing off to a mail client can fail
-               silently (no handler registered, blocked by the browser), and the one
-               thing that must never happen is a submit that looks like nothing at
-               all happened. */
+            /* Confirm first: the mailto hand-off can fail silently with no handler. */
             showStatus('ok', 'ct.status.ok');
 
             try {

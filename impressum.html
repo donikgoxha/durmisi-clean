@@ -3,17 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title data-i18n="meta.legal.title">Impressum &amp; Datenschutz — Durmisi&amp;Clean</title>
+    <title data-i18n="meta.legal.title">Impressum &amp; Datenschutz | Durmisi&amp;Clean</title>
     <meta name="description" data-i18n-attr="content:meta.legal.desc"
           content="Impressum und Datenschutzerklärung von Durmisi&amp;Clean.">
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0c1526">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
     <script>
-        /* Runs before first paint: applies the stored language so English visitors
-           never see a flash of German. The timer is a failsafe — if i18n.js fails to
-           load, it un-hides the page rather than leaving it blank. */
+        /* Apply the stored language before first paint; the timeout reveals the page if i18n.js never loads. */
         try {
             var d = document.documentElement;
             if (localStorage.getItem('dc-lang') === 'en') {
@@ -157,7 +155,7 @@
                 <p data-i18n="lg.dp.2.text">Diese
                     Website ist statisch und setzt keine Analyse-Cookies und keine Tracking-Dienste ein. Wir erheben von
                     sich aus keine Personendaten. Nutzen Sie das Kontaktformular, wird die Nachricht in Ihrem eigenen
-                    E-Mail-Programm erstellt und von Ihnen versendet — die Daten gelangen also erst zu uns, wenn Sie das
+                    E-Mail-Programm erstellt und von Ihnen versendet. Die Daten gelangen also erst zu uns, wenn Sie das
                     E-Mail tatsächlich abschicken.</p>
 
                 <h3 data-i18n="lg.dp.3.title">Zweck und

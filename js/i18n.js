@@ -40,27 +40,29 @@ const I18N = {
     'topbar.hours': 'Mo–Fr 07:00–18:00 · Sa 08:00–14:00',
     'topbar.free': 'Offerte kostenlos & unverbindlich',
 
+    'img.about.alt': 'Reinigungskraft von Durmisi&Clean zieht blaue Schutzhandschuhe an',
+
     /* ---- Home: hero ---- */
-    'meta.home.title': 'Durmisi&Clean — Professionelle Reinigung in der Schweiz',
+    'meta.home.title': 'Durmisi&Clean | Professionelle Reinigung in der Schweiz',
     'meta.home.desc': 'Unterhaltsreinigung, Umzugsreinigung, Fenster-, Bau-, Büro- und Grundreinigung in der Schweiz. Kostenlose Offerte innert 24 Stunden.',
     'hero.title': 'Wir reinigen, damit Sie <span class="hl-underline">durchatmen</span> können.',
-    'hero.sub': 'Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit verbindlichen Pauschalpreisen.',
+    'hero.sub': 'Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften: gründlich, pünktlich und mit verbindlichen Pauschalpreisen.',
 
     /* ---- Home: services ---- */
     'services.eyebrow': 'Unsere Leistungen',
     'services.title': 'Ein Partner für jede Art von Reinigung',
-    'services.sub': 'Vom wöchentlichen Unterhalt bis zur Bauendreinigung — alles aus einer Hand, mit festen Teams und verbindlichen Pauschalpreisen.',
+    'services.sub': 'Vom wöchentlichen Unterhalt bis zur Bauendreinigung: alles aus einer Hand, mit festen Teams und verbindlichen Pauschalpreisen.',
 
     'svc.unterhalt.name': 'Unterhaltsreinigung',
-    'svc.unterhalt.short': 'Regelmässige Reinigung nach festem Plan — täglich, wöchentlich oder nach Absprache. Immer dasselbe Team, immer derselbe Standard.',
+    'svc.unterhalt.short': 'Regelmässige Reinigung nach festem Plan: täglich, wöchentlich oder nach Absprache. Immer dasselbe Team, immer derselbe Standard.',
     'svc.umzug.name': 'Umzugsreinigung',
-    'svc.umzug.short': 'Wohnungs- und Hausreinigung bei Ein- und Auszug — gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.',
+    'svc.umzug.short': 'Wohnungs- und Hausreinigung bei Ein- und Auszug. Gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.',
     'svc.fenster.name': 'Fensterreinigung',
-    'svc.fenster.short': 'Glas, Rahmen, Storen und Rollläden — streifenfrei innen wie aussen, auch in schwer zugänglichen Lagen.',
+    'svc.fenster.short': 'Glas, Rahmen, Storen und Rollläden: streifenfrei innen wie aussen, auch in schwer zugänglichen Lagen.',
     'svc.bau.name': 'Baureinigung',
     'svc.bau.short': 'Grob-, Fein- und Bauendreinigung nach Neubau, Umbau oder Renovation. Termingerecht auf den Bezugstermin.',
     'svc.buero.name': 'Büroreinigung',
-    'svc.buero.short': 'Diskrete Reinigung von Büros, Praxen und Gewerberäumen — ausserhalb Ihrer Geschäftszeiten, ohne Unterbruch im Betrieb.',
+    'svc.buero.short': 'Diskrete Reinigung von Büros, Praxen und Gewerberäumen, ausserhalb Ihrer Geschäftszeiten und ohne Unterbruch im Betrieb.',
     'svc.grund.name': 'Grundreinigung',
     'svc.grund.short': 'Intensive Tiefenreinigung für Küche, Bad und Böden. Kalk, Fett und Altablagerungen restlos entfernt.',
 
@@ -75,24 +77,24 @@ const I18N = {
     'why.3.title': 'Verbindliche Pauschalen',
     'why.3.text': 'Sie erhalten den Preis schriftlich, bevor wir beginnen. Keine Stundenaufrechnung, keine Zuschläge, keine Überraschungen auf der Rechnung.',
     'why.4.title': 'Ökologische Reinigungsmittel',
-    'why.4.text': 'Biologisch abbaubare Produkte, sicher für Kinder, Haustiere und Allergikerinnen und Allergiker — ohne Kompromiss beim Ergebnis.',
+    'why.4.text': 'Biologisch abbaubare Produkte, sicher für Kinder, Haustiere und Allergikerinnen und Allergiker, ohne Kompromiss beim Ergebnis.',
 
     /* ---- Home: process ---- */
     'process.eyebrow': 'So arbeiten wir',
     'process.title': 'In drei Schritten zum sauberen Ergebnis',
     'process.1.title': 'Anfrage',
-    'process.1.text': 'Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden — auch am Wochenende.',
+    'process.1.text': 'Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden, auch am Wochenende.',
     'process.2.title': 'Besichtigung & Offerte',
     'process.2.text': 'Wir schauen uns das Objekt an, vor Ort oder anhand von Fotos, und senden Ihnen eine verbindliche Pauschale.',
     'process.3.title': 'Reinigung',
-    'process.3.text': 'Das Team kommt zum vereinbarten Termin — mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.',
+    'process.3.text': 'Das Team kommt zum vereinbarten Termin, mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.',
     /* ---- FAQ ---- */
     'faq.eyebrow': 'Häufige Fragen',
     'faq.title': 'Antworten, bevor Sie fragen müssen',
     'faq.1.q': 'Was kostet eine Umzugsreinigung?',
-    'faq.1.a': 'Der Preis richtet sich nach Grösse und Zustand des Objekts sowie danach, ob Fenster, Storen und Balkon dazugehören. Sie erhalten vor dem Start immer eine verbindliche Pauschale — kostenlos und unverbindlich. Richtwerte für Ihre Wohnungsgrösse nennen wir Ihnen gerne direkt am Telefon.',
+    'faq.1.a': 'Der Preis richtet sich nach Grösse und Zustand des Objekts sowie danach, ob Fenster, Storen und Balkon dazugehören. Sie erhalten vor dem Start immer eine verbindliche Pauschale, kostenlos und unverbindlich. Richtwerte für Ihre Wohnungsgrösse nennen wir Ihnen gerne direkt am Telefon.',
     'faq.2.q': 'Wie schnell können Sie kommen?',
-    'faq.2.a': 'Unterhaltsreinigungen starten wir in der Regel innert einer Woche. Umzugsreinigungen planen wir idealerweise zwei bis drei Wochen im Voraus. Kurzfristige Termine sind auf Anfrage oft möglich — fragen Sie einfach nach.',
+    'faq.2.a': 'Unterhaltsreinigungen starten wir in der Regel innert einer Woche. Umzugsreinigungen planen wir idealerweise zwei bis drei Wochen im Voraus. Kurzfristige Termine sind auf Anfrage oft möglich. Fragen Sie einfach nach.',
     'faq.3.q': 'Bringen Sie Material und Maschinen selbst mit?',
     'faq.3.a': 'Ja, vollständig. Reinigungsmittel, Maschinen und Verbrauchsmaterial sind im Preis enthalten, sofern nichts anderes vereinbart wurde. Sie müssen nichts bereitstellen.',
     'faq.4.q': 'Sind Sie versichert?',
@@ -104,13 +106,13 @@ const I18N = {
 
     /* ---- Final CTA ---- */
     'final.title': 'Holen Sie sich Ihre kostenlose Offerte.',
-    'final.sub': 'Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale — ohne Verpflichtung.',
+    'final.sub': 'Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale, ohne Verpflichtung.',
 
     /* ---- Services page ---- */
-    'meta.services.title': 'Leistungen — Durmisi&Clean',
+    'meta.services.title': 'Leistungen | Durmisi&Clean',
     'meta.services.desc': 'Unterhaltsreinigung, Umzugsreinigung, Fensterreinigung, Baureinigung, Büroreinigung und Grundreinigung in der Schweiz.',
     'sp.title': 'Unsere Leistungen im Detail',
-    'sp.sub': 'Sechs Kernbereiche, klar abgegrenzt und sauber kalkuliert. Was Sie hier nicht finden, fragen Sie trotzdem an — vieles lässt sich einrichten.',
+    'sp.sub': 'Sechs Kernbereiche, klar abgegrenzt und sauber kalkuliert. Was Sie hier nicht finden, fragen Sie trotzdem an. Vieles lässt sich einrichten.',
     'sp.included': 'Im Leistungsumfang enthalten',
     'sp.ideal': 'Ideal für',
 
@@ -123,7 +125,7 @@ const I18N = {
     'svc.unterhalt.i5': 'Abfallentsorgung und Verbrauchsmaterial',
     'svc.unterhalt.i6': 'Schriftlicher Leistungsnachweis pro Einsatz',
 
-    'svc.umzug.long': 'Die Umzugsreinigung sorgt dafür, dass Ihre Wohnung beim Auszug in einwandfreiem Zustand ist. Wir reinigen nach einer festen, schriftlichen Checkliste — gründlich, mit System und pünktlich zum vereinbarten Termin.',
+    'svc.umzug.long': 'Die Umzugsreinigung sorgt dafür, dass Ihre Wohnung beim Auszug in einwandfreiem Zustand ist. Wir reinigen nach einer festen, schriftlichen Checkliste: gründlich, mit System und pünktlich zum vereinbarten Termin.',
     'svc.umzug.ideal': 'Mieterinnen und Mieter, Eigentümerinnen und Eigentümer, Verwaltungen und Umzugsunternehmen.',
     'svc.umzug.i1': 'Küche inklusive Backofen, Dampfabzug und Kühlschrank',
     'svc.umzug.i2': 'Bad und WC vollständig entkalkt',
@@ -159,7 +161,7 @@ const I18N = {
     'svc.buero.i5': 'Abfall- und Wertstoffentsorgung',
     'svc.buero.i6': 'Auffüllen von Papier-, Seifen- und Hygienematerial',
 
-    'svc.grund.long': 'Die Grundreinigung setzt dort an, wo die tägliche Reinigung nicht mehr hinkommt. Wir arbeiten mit Dampf, Einscheibenmaschine und Spezialmitteln — gegen Kalk, Fett, Nikotin und eingewachsenen Schmutz. Danach ist der Ausgangszustand wiederhergestellt und der Unterhalt wieder einfach.',
+    'svc.grund.long': 'Die Grundreinigung setzt dort an, wo die tägliche Reinigung nicht mehr hinkommt. Wir arbeiten mit Dampf, Einscheibenmaschine und Spezialmitteln gegen Kalk, Fett, Nikotin und eingewachsenen Schmutz. Danach ist der Ausgangszustand wiederhergestellt und der Unterhalt wieder einfach.',
     'svc.grund.ideal': 'Objekte nach längerer Nutzung, vor Neuvermietung, nach Mieterwechsel oder bei Übernahme einer Liegenschaft.',
     'svc.grund.i1': 'Küche inklusive Fett- und Kalkentfernung',
     'svc.grund.i2': 'Bad, Fugen und Sanitärkeramik',
@@ -169,26 +171,26 @@ const I18N = {
     'svc.grund.i6': 'Geruchsneutralisierung auf Wunsch',
 
     /* ---- About page ---- */
-    'meta.about.title': 'Über uns — Durmisi&Clean',
+    'meta.about.title': 'Über uns | Durmisi&Clean',
     'meta.about.desc': 'Fachmann Betriebsunterhalt EFZ mit 10 Jahren Berufserfahrung und einem festen Team von vier Mitarbeitenden. Reinigung nach Schweizer Berufsstandard.',
     'ab.title': 'Ein Familienbetrieb, kein Callcenter',
     'ab.sub': 'Bei uns nimmt eine Person ab, die das Objekt danach auch tatsächlich kennt. Das ist der ganze Unterschied.',
     'ab.story.eyebrow': 'Unsere Geschichte',
     'ab.story.title': 'Gelernt, geprüft, seit zehn Jahren im Einsatz',
-    'ab.story.p1': 'Hinter Durmisi&Clean steht eine abgeschlossene Ausbildung zum Fachmann Betriebsunterhalt EFZ — dem eidgenössischen Fähigkeitszeugnis für Gebäudeunterhalt und Reinigung — sowie zehn Jahre Berufserfahrung in genau diesem Feld.',
-    'ab.story.p2': 'Diese Ausbildung ist der Unterschied zwischen Putzen und Werterhalt. Wer weiss, welches Mittel auf welchen Belag gehört, verhindert Schäden, statt sie zu verursachen — an Parkett, Naturstein, Chromstahl oder empfindlichen Oberflächen.',
+    'ab.story.p1': 'Hinter Durmisi&Clean steht eine abgeschlossene Ausbildung zum Fachmann Betriebsunterhalt EFZ, dem eidgenössischen Fähigkeitszeugnis für Gebäudeunterhalt und Reinigung, sowie zehn Jahre Berufserfahrung in genau diesem Feld.',
+    'ab.story.p2': 'Diese Ausbildung ist der Unterschied zwischen Putzen und Werterhalt. Wer weiss, welches Mittel auf welchen Belag gehört, verhindert Schäden, statt sie zu verursachen, sei es an Parkett, Naturstein, Chromstahl oder empfindlichen Oberflächen.',
     'ab.story.p3': 'Heute arbeiten vier feste Mitarbeitende im Team. Alle sind ordentlich angestellt, eingearbeitet und einem festen Kundenkreis zugeteilt: Privathaushalte, Büros und Liegenschaften in der ganzen Region.',
 
     'ab.values.eyebrow': 'Wofür wir stehen',
     'ab.values.title': 'Vier Grundsätze, die nicht verhandelbar sind',
     'ab.v1.title': 'Verlässlichkeit',
-    'ab.v1.text': 'Ein vereinbarter Termin ist ein Versprechen. Wenn etwas dazwischenkommt, erfahren Sie es von uns — und zwar bevor Sie darauf warten.',
+    'ab.v1.text': 'Ein vereinbarter Termin ist ein Versprechen. Wenn etwas dazwischenkommt, erfahren Sie es von uns, und zwar bevor Sie darauf warten.',
     'ab.v2.title': 'Diskretion',
     'ab.v2.text': 'Wir arbeiten in Wohnungen, Praxen und Kanzleien. Alle Mitarbeitenden sind auf Verschwiegenheit verpflichtet, ohne Ausnahme.',
     'ab.v3.title': 'Faire Anstellung',
     'ab.v3.text': 'Ordentliche Verträge, branchenübliche Löhne, korrekte Sozialabgaben. Wer gut behandelt wird, arbeitet auch gut.',
     'ab.v4.title': 'Ehrliche Preise',
-    'ab.v4.text': 'Der Preis in der Offerte ist der Preis auf der Rechnung. Wird etwas teurer, fragen wir vorher — nicht nachher.',
+    'ab.v4.text': 'Der Preis in der Offerte ist der Preis auf der Rechnung. Wird etwas teurer, fragen wir vorher, nicht nachher.',
 
     'ab.promise.eyebrow': 'Qualitätsversprechen',
     'ab.promise.title': 'Woran Sie uns messen dürfen',
@@ -202,11 +204,11 @@ const I18N = {
 
     'ab.qual.eyebrow': 'Qualifikation',
     'ab.qual.title': 'Gelernt, nicht angelernt',
-    'ab.qual.p': 'Reinigung ist in der Schweiz ein Lehrberuf. Der Unterschied zwischen Putzen und fachgerechtem Werterhalt liegt in Materialkunde, Dosierung, Maschinenführung und Arbeitssicherheit — alles Teil der eidgenössischen Ausbildung.',
+    'ab.qual.p': 'Reinigung ist in der Schweiz ein Lehrberuf. Der Unterschied zwischen Putzen und fachgerechtem Werterhalt liegt in Materialkunde, Dosierung, Maschinenführung und Arbeitssicherheit. Das alles ist Teil der eidgenössischen Ausbildung.',
     'ab.q1.title': 'Fachmann Betriebsunterhalt EFZ',
     'ab.q1.text': 'Abgeschlossene Schweizer Berufslehre mit eidgenössischem Fähigkeitszeugnis, Fachrichtung Gebäudeunterhalt: Reinigung, Instandhaltung, Materialkunde und Arbeitssicherheit.',
     'ab.q2.title': '10 Jahre Berufserfahrung',
-    'ab.q2.text': 'Zehn Jahre in der Reinigungs- und Unterhaltsbranche — von der wiederkehrenden Unterhaltsreinigung über Umzugsobjekte bis zur Bauendreinigung.',
+    'ab.q2.text': 'Zehn Jahre in der Reinigungs- und Unterhaltsbranche, von der wiederkehrenden Unterhaltsreinigung über Umzugsobjekte bis zur Bauendreinigung.',
     'ab.q3.title': 'Vier feste Mitarbeitende',
     'ab.q3.text': 'Ein kleines, eingespieltes Team statt wechselnder Aushilfen. Alle ordentlich angestellt, unfallversichert und laufend eingearbeitet.',
     'ab.promise.i7': 'Ausgeführt nach Schweizer Berufsstandard (EFZ)',
@@ -216,10 +218,10 @@ const I18N = {
     'ab.team.p': 'Vier feste Mitarbeitende, fest angestellt und einem festen Kundenkreis zugeteilt. Sie kennen Ihr Objekt, Ihre Wünsche und die Stellen, auf die es Ihnen ankommt. Neue Mitarbeitende arbeiten die ersten Einsätze immer begleitet.',
 
     /* ---- Contact page ---- */
-    'meta.contact.title': 'Kontakt — Durmisi&Clean',
+    'meta.contact.title': 'Kontakt | Durmisi&Clean',
     'meta.contact.desc': 'Kontaktieren Sie Durmisi&Clean für eine kostenlose und unverbindliche Offerte. Antwort innert 24 Stunden.',
     'ct.title': 'Sprechen wir über Ihr Objekt',
-    'ct.sub': 'Rufen Sie an, schreiben Sie uns oder füllen Sie das Formular aus. Sie erhalten innert 24 Stunden eine Antwort — mit einer verbindlichen Pauschale, kostenlos und unverbindlich.',
+    'ct.sub': 'Rufen Sie an, schreiben Sie uns oder füllen Sie das Formular aus. Sie erhalten innert 24 Stunden eine Antwort mit einer verbindlichen Pauschale, kostenlos und unverbindlich.',
     'ct.form.title': 'Offerte anfordern',
     'ct.form.sub': 'Je mehr Sie uns mitgeben, desto genauer wird die Offerte. Pflichtfelder sind markiert.',
     'ct.f.name': 'Name',
@@ -242,7 +244,7 @@ const I18N = {
     'ct.err.required': 'Bitte füllen Sie dieses Feld aus.',
     'ct.err.email': 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
     'ct.err.privacy': 'Bitte bestätigen Sie die Einwilligung.',
-    'ct.status.ok': 'Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht ab — dann ist Ihre Anfrage bei uns.',
+    'ct.status.ok': 'Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht ab, dann ist Ihre Anfrage bei uns.',
     'ct.status.err': 'Bitte prüfen Sie die markierten Felder.',
     'ct.status.mailFail': 'Ihr E-Mail-Programm liess sich nicht öffnen. Bitte senden Sie uns Ihre Anfrage direkt per E-Mail oder rufen Sie uns an.',
     'ct.direct.title': 'Direkt erreichbar',
@@ -257,15 +259,15 @@ const I18N = {
     'ct.hours.sotime': 'Geschlossen',
     'ct.hours.note': 'Umzugstermine ausserhalb dieser Zeiten sind nach Absprache möglich.',
 
-    'meta.404.title': 'Seite nicht gefunden — Durmisi&Clean',
+    'meta.404.title': 'Seite nicht gefunden | Durmisi&Clean',
     'meta.404.desc': 'Diese Seite existiert nicht. Zur Startseite oder direkt Kontakt aufnehmen.',
     'e404.code': 'Fehler 404',
     'e404.title': 'Diese Seite gibt es nicht.',
-    'e404.text': 'Der Link ist vielleicht veraltet oder enthält einen Tippfehler. Über das Menü finden Sie alles — oder melden Sie sich direkt bei uns.',
+    'e404.text': 'Der Link ist vielleicht veraltet oder enthält einen Tippfehler. Über das Menü finden Sie alles, oder melden Sie sich direkt bei uns.',
     'e404.home': 'Zur Startseite',
 
     /* ---- Legal page ---- */
-    'meta.legal.title': 'Impressum & Datenschutz — Durmisi&Clean',
+    'meta.legal.title': 'Impressum & Datenschutz | Durmisi&Clean',
     'meta.legal.desc': 'Impressum und Datenschutzerklärung von Durmisi&Clean.',
     'lg.title': 'Impressum & Datenschutz',
     'lg.sub': 'Angaben zum Betrieb und Informationen zur Bearbeitung Ihrer Daten.',
@@ -279,7 +281,7 @@ const I18N = {
     'lg.dp.1.title': 'Verantwortliche Stelle',
     'lg.dp.1.text': 'Verantwortlich für die Bearbeitung von Personendaten auf dieser Website ist Durmisi&Clean, erreichbar über die im Impressum genannten Kontaktangaben.',
     'lg.dp.2.title': 'Welche Daten wir bearbeiten',
-    'lg.dp.2.text': 'Diese Website ist statisch und setzt keine Analyse-Cookies und keine Tracking-Dienste ein. Wir erheben von sich aus keine Personendaten. Nutzen Sie das Kontaktformular, wird die Nachricht in Ihrem eigenen E-Mail-Programm erstellt und von Ihnen versendet — die Daten gelangen also erst zu uns, wenn Sie das E-Mail tatsächlich abschicken.',
+    'lg.dp.2.text': 'Diese Website ist statisch und setzt keine Analyse-Cookies und keine Tracking-Dienste ein. Wir erheben von sich aus keine Personendaten. Nutzen Sie das Kontaktformular, wird die Nachricht in Ihrem eigenen E-Mail-Programm erstellt und von Ihnen versendet. Die Daten gelangen also erst zu uns, wenn Sie das E-Mail tatsächlich abschicken.',
     'lg.dp.3.title': 'Zweck und Aufbewahrung',
     'lg.dp.3.text': 'Angaben, die Sie uns per E-Mail, Telefon oder WhatsApp übermitteln, bearbeiten wir ausschliesslich zur Beantwortung Ihrer Anfrage und zur Abwicklung eines allfälligen Auftrags. Wir bewahren sie nur so lange auf, wie dies dafür oder aufgrund gesetzlicher Aufbewahrungspflichten erforderlich ist.',
     'lg.dp.4.title': 'Weitergabe an Dritte',
@@ -325,27 +327,29 @@ const I18N = {
     'topbar.hours': 'Mon–Fri 07:00–18:00 · Sat 08:00–14:00',
     'topbar.free': 'Quotes are free and without obligation',
 
+    'img.about.alt': 'A Durmisi&Clean cleaner pulling on blue protective gloves',
+
     /* ---- Home: hero ---- */
-    'meta.home.title': 'Durmisi&Clean — Professional Cleaning Services in Switzerland',
+    'meta.home.title': 'Durmisi&Clean | Professional Cleaning Services in Switzerland',
     'meta.home.desc': 'Maintenance cleaning, move-out cleaning, window, construction, office and deep cleaning in Switzerland. Free quote within 24 hours.',
     'hero.title': 'We clean, so you can <span class="hl-underline">breathe easy</span>.',
-    'hero.sub': 'Professional cleaning for private homes, offices and properties — thorough, punctual, and backed by binding flat-rate prices.',
+    'hero.sub': 'Professional cleaning for private homes, offices and properties: thorough, punctual and backed by binding flat-rate prices.',
 
     /* ---- Home: services ---- */
     'services.eyebrow': 'Our Services',
     'services.title': 'One partner for every kind of cleaning',
-    'services.sub': 'From the weekly maintenance round to final construction cleaning — all from one team, with fixed crews and binding flat-rate prices.',
+    'services.sub': 'From the weekly maintenance round to final construction cleaning: all from one team, with fixed crews and binding flat-rate prices.',
 
     'svc.unterhalt.name': 'Maintenance Cleaning',
-    'svc.unterhalt.short': 'Regular cleaning on a fixed schedule — daily, weekly or as agreed. The same team every time, the same standard every time.',
+    'svc.unterhalt.short': 'Regular cleaning on a fixed schedule: daily, weekly or as agreed. The same team every time, the same standard every time.',
     'svc.umzug.name': 'Move-Out Cleaning',
-    'svc.umzug.short': 'Apartment and house cleaning when moving in or out — thorough and checklist-based, so everything is ready when you move.',
+    'svc.umzug.short': 'Apartment and house cleaning when moving in or out. Thorough and checklist-based, so everything is ready when you move.',
     'svc.fenster.name': 'Window Cleaning',
-    'svc.fenster.short': 'Glass, frames, blinds and shutters — streak-free inside and out, including hard-to-reach positions.',
+    'svc.fenster.short': 'Glass, frames, blinds and shutters: streak-free inside and out, including hard-to-reach positions.',
     'svc.bau.name': 'Construction Cleaning',
     'svc.bau.short': 'Rough, fine and final cleaning after new builds, conversions or renovations. Ready in time for the handover date.',
     'svc.buero.name': 'Office Cleaning',
-    'svc.buero.short': 'Discreet cleaning of offices, practices and commercial premises — outside your business hours, with no interruption to your work.',
+    'svc.buero.short': 'Discreet cleaning of offices, practices and commercial premises, outside your business hours and with no interruption to your work.',
     'svc.grund.name': 'Deep Cleaning',
     'svc.grund.short': 'Intensive deep cleaning for kitchens, bathrooms and floors. Limescale, grease and built-up residue removed completely.',
 
@@ -360,24 +364,24 @@ const I18N = {
     'why.3.title': 'Binding flat rates',
     'why.3.text': 'You get the price in writing before we start. No hourly billing, no surcharges, no surprises on the invoice.',
     'why.4.title': 'Eco-friendly products',
-    'why.4.text': 'Biodegradable products that are safe for children, pets and people with allergies — with no compromise on the result.',
+    'why.4.text': 'Biodegradable products that are safe for children, pets and people with allergies, with no compromise on the result.',
 
     /* ---- Home: process ---- */
     'process.eyebrow': 'How we work',
     'process.title': 'Three steps to a spotless result',
     'process.1.title': 'Enquiry',
-    'process.1.text': 'Get in touch by phone, form or WhatsApp. We reply within 24 hours — weekends included.',
+    'process.1.text': 'Get in touch by phone, form or WhatsApp. We reply within 24 hours, weekends included.',
     'process.2.title': 'Visit & quote',
     'process.2.text': 'We look at the property, either on site or from your photos, and send you a binding flat-rate quote.',
     'process.3.title': 'The clean',
-    'process.3.text': 'The team arrives at the agreed time — with their own machines, their own materials and a clear checklist.',
+    'process.3.text': 'The team arrives at the agreed time, with their own machines, their own materials and a clear checklist.',
     /* ---- FAQ ---- */
     'faq.eyebrow': 'Frequently asked',
     'faq.title': 'Answers before you have to ask',
     'faq.1.q': 'What does a move-out clean cost?',
-    'faq.1.a': 'The price depends on the size and condition of the property and on whether windows, blinds and balcony are included. You always receive a binding flat rate before we start — free and without obligation. We are happy to give you a ballpark figure for your apartment size over the phone.',
+    'faq.1.a': 'The price depends on the size and condition of the property and on whether windows, blinds and balcony are included. You always receive a binding flat rate before we start, free and without obligation. We are happy to give you a ballpark figure for your apartment size over the phone.',
     'faq.2.q': 'How quickly can you come?',
-    'faq.2.a': 'Maintenance cleaning usually starts within a week. Move-out cleans are best booked two to three weeks ahead. Short-notice appointments are often possible on request — just ask.',
+    'faq.2.a': 'Maintenance cleaning usually starts within a week. Move-out cleans are best booked two to three weeks ahead. Short-notice appointments are often possible on request. Just ask.',
     'faq.3.q': 'Do you bring your own materials and machines?',
     'faq.3.a': 'Yes, everything. Cleaning products, machines and consumables are included in the price unless agreed otherwise. You do not need to provide anything.',
     'faq.4.q': 'Are you insured?',
@@ -389,13 +393,13 @@ const I18N = {
 
     /* ---- Final CTA ---- */
     'final.title': 'Get your free quote.',
-    'final.sub': 'Tell us briefly what you need. You will have a binding flat rate within 24 hours — with no obligation.',
+    'final.sub': 'Tell us briefly what you need. You will have a binding flat rate within 24 hours, with no obligation.',
 
     /* ---- Services page ---- */
-    'meta.services.title': 'Services — Durmisi&Clean',
+    'meta.services.title': 'Services | Durmisi&Clean',
     'meta.services.desc': 'Maintenance, move-out, window, construction, office and deep cleaning services in Switzerland.',
     'sp.title': 'Our services in detail',
-    'sp.sub': 'Six core areas, clearly defined and cleanly costed. If what you need is not listed here, ask anyway — most things can be arranged.',
+    'sp.sub': 'Six core areas, clearly defined and cleanly costed. If what you need is not listed here, ask anyway. Most things can be arranged.',
     'sp.included': 'What is included',
     'sp.ideal': 'Ideal for',
 
@@ -408,7 +412,7 @@ const I18N = {
     'svc.unterhalt.i5': 'Waste disposal and consumables',
     'svc.unterhalt.i6': 'Written record of work for every visit',
 
-    'svc.umzug.long': 'The move-out clean gets your apartment into spotless condition before you leave. We work from a fixed, written checklist — thorough, systematic, and on time for the agreed date.',
+    'svc.umzug.long': 'The move-out clean gets your apartment into spotless condition before you leave. We work from a fixed, written checklist: thorough, systematic and on time for the agreed date.',
     'svc.umzug.ideal': 'Tenants, owners, property management companies and removal firms.',
     'svc.umzug.i1': 'Kitchen including oven, extractor hood and fridge',
     'svc.umzug.i2': 'Bathroom and WC fully descaled',
@@ -444,7 +448,7 @@ const I18N = {
     'svc.buero.i5': 'Waste and recycling disposal',
     'svc.buero.i6': 'Restocking paper, soap and hygiene supplies',
 
-    'svc.grund.long': 'Deep cleaning picks up where routine cleaning can no longer reach. We work with steam, single-disc machines and specialist products — against limescale, grease, nicotine and ingrained dirt. Afterwards the property is back to its original state and easy to maintain again.',
+    'svc.grund.long': 'Deep cleaning picks up where routine cleaning can no longer reach. We work with steam, single-disc machines and specialist products against limescale, grease, nicotine and ingrained dirt. Afterwards the property is back to its original state and easy to maintain again.',
     'svc.grund.ideal': 'Properties after long use, before re-letting, after a tenant change, or when taking over a building.',
     'svc.grund.i1': 'Kitchen including grease and limescale removal',
     'svc.grund.i2': 'Bathroom, grout and sanitary ceramics',
@@ -454,30 +458,30 @@ const I18N = {
     'svc.grund.i6': 'Odour neutralisation on request',
 
     /* ---- About page ---- */
-    'meta.about.title': 'About us — Durmisi&Clean',
+    'meta.about.title': 'About us | Durmisi&Clean',
     'meta.about.desc': 'Fachmann Betriebsunterhalt EFZ with 10 years of professional experience and a permanent team of four. Cleaning to Swiss trade standard.',
     'ab.title': 'A family business, not a call centre',
     'ab.sub': 'When you call, you reach someone who will actually know your property afterwards. That is the whole difference.',
     'ab.story.eyebrow': 'Our story',
     'ab.story.title': 'Qualified, certified, ten years in the field',
-    'ab.story.p1': 'Behind Durmisi&Clean is a completed apprenticeship as Fachmann Betriebsunterhalt EFZ — the Swiss federal certificate of proficiency in building maintenance and cleaning — plus ten years of professional experience in exactly this field.',
-    'ab.story.p2': 'That training is the difference between wiping down and protecting value. Knowing which product belongs on which surface prevents damage rather than causing it — on parquet, natural stone, stainless steel or delicate finishes.',
+    'ab.story.p1': 'Behind Durmisi&Clean is a completed apprenticeship as Fachmann Betriebsunterhalt EFZ, the Swiss federal certificate of proficiency in building maintenance and cleaning, plus ten years of professional experience in exactly this field.',
+    'ab.story.p2': 'That training is the difference between wiping down and protecting value. Knowing which product belongs on which surface prevents damage rather than causing it, whether on parquet, natural stone, stainless steel or delicate finishes.',
     'ab.story.p3': 'Today the team is four permanent staff. All properly employed, fully trained in and assigned to a fixed group of customers: private homes, offices and properties across the region.',
 
     'ab.values.eyebrow': 'What we stand for',
     'ab.values.title': 'Four principles that are not up for negotiation',
     'ab.v1.title': 'Reliability',
-    'ab.v1.text': 'An agreed appointment is a promise. If something does come up, you hear it from us — before you are left waiting.',
+    'ab.v1.text': 'An agreed appointment is a promise. If something does come up, you hear it from us, before you are left waiting.',
     'ab.v2.title': 'Discretion',
     'ab.v2.text': 'We work in homes, practices and law firms. Every member of staff is bound to confidentiality, without exception.',
     'ab.v3.title': 'Fair employment',
     'ab.v3.text': 'Proper contracts, standard industry wages, correct social contributions. People who are treated well do good work.',
     'ab.v4.title': 'Honest pricing',
-    'ab.v4.text': 'The price on the quote is the price on the invoice. If something will cost more, we ask beforehand — not afterwards.',
+    'ab.v4.text': 'The price on the quote is the price on the invoice. If something will cost more, we ask beforehand, not afterwards.',
 
     'ab.promise.eyebrow': 'Quality promise',
     'ab.promise.title': 'What you can hold us to',
-    'ab.promise.p': 'Every job follows a written checklist tailored to your property, so it is always clear — for you and for us — exactly what was done.',
+    'ab.promise.p': 'Every job follows a written checklist tailored to your property, so it is always clear, for you and for us, exactly what was done.',
     'ab.promise.i1': 'A written checklist for every property',
     'ab.promise.i2': 'One named contact, directly reachable',
     'ab.promise.i3': 'Written quote before every job starts',
@@ -487,11 +491,11 @@ const I18N = {
 
     'ab.qual.eyebrow': 'Qualification',
     'ab.qual.title': 'Trained, not improvised',
-    'ab.qual.p': 'In Switzerland, cleaning is a formally taught trade. What separates wiping down from proper upkeep is knowledge of materials, dosage, machine handling and workplace safety — all part of the federal apprenticeship.',
+    'ab.qual.p': 'In Switzerland, cleaning is a formally taught trade. What separates wiping down from proper upkeep is knowledge of materials, dosage, machine handling and workplace safety, all part of the federal apprenticeship.',
     'ab.q1.title': 'Fachmann Betriebsunterhalt EFZ',
     'ab.q1.text': 'A completed Swiss apprenticeship with the federal certificate of proficiency (EFZ) in building maintenance: cleaning, upkeep, materials and workplace safety.',
     'ab.q2.title': '10 years in the trade',
-    'ab.q2.text': 'Ten years across cleaning and building maintenance — from recurring maintenance work to move-out properties and final construction cleans.',
+    'ab.q2.text': 'Ten years across cleaning and building maintenance, from recurring maintenance work to move-out properties and final construction cleans.',
     'ab.q3.title': 'Four permanent staff',
     'ab.q3.text': 'A small, settled team rather than rotating temps. All properly employed, accident-insured and continuously trained.',
     'ab.promise.i7': 'Carried out to Swiss trade standard (EFZ)',
@@ -501,10 +505,10 @@ const I18N = {
     'ab.team.p': 'Four permanent members of staff, each assigned to a fixed group of customers. They know your property, your preferences and the spots that matter to you. New staff are always accompanied on their first jobs.',
 
     /* ---- Contact page ---- */
-    'meta.contact.title': 'Contact — Durmisi&Clean',
+    'meta.contact.title': 'Contact | Durmisi&Clean',
     'meta.contact.desc': 'Contact Durmisi&Clean for a free, no-obligation quote. We reply within 24 hours.',
     'ct.title': 'Let us talk about your property',
-    'ct.sub': 'Call, write, or fill in the form. You will hear back within 24 hours — with a binding flat rate, free and without obligation.',
+    'ct.sub': 'Call, write, or fill in the form. You will hear back within 24 hours with a binding flat rate, free and without obligation.',
     'ct.form.title': 'Request a quote',
     'ct.form.sub': 'The more you tell us, the more accurate the quote. Required fields are marked.',
     'ct.f.name': 'Name',
@@ -527,7 +531,7 @@ const I18N = {
     'ct.err.required': 'Please fill in this field.',
     'ct.err.email': 'Please enter a valid e-mail address.',
     'ct.err.privacy': 'Please confirm your consent.',
-    'ct.status.ok': 'Your e-mail programme has opened. Please send the prepared message — then your enquiry is with us.',
+    'ct.status.ok': 'Your e-mail programme has opened. Please send the prepared message, then your enquiry is with us.',
     'ct.status.err': 'Please check the highlighted fields.',
     'ct.status.mailFail': 'Your e-mail programme could not be opened. Please send us your enquiry by e-mail directly, or give us a call.',
     'ct.direct.title': 'Reach us directly',
@@ -542,15 +546,15 @@ const I18N = {
     'ct.hours.sotime': 'Closed',
     'ct.hours.note': 'Move-out appointments outside these hours can be arranged.',
 
-    'meta.404.title': 'Page not found — Durmisi&Clean',
+    'meta.404.title': 'Page not found | Durmisi&Clean',
     'meta.404.desc': 'This page does not exist. Head back to the homepage or get in touch directly.',
     'e404.code': 'Error 404',
     'e404.title': 'This page does not exist.',
-    'e404.text': 'The link may be out of date or contain a typo. The menu will get you anywhere — or just contact us directly.',
+    'e404.text': 'The link may be out of date or contain a typo. The menu will get you anywhere, or just contact us directly.',
     'e404.home': 'Back to homepage',
 
     /* ---- Legal page ---- */
-    'meta.legal.title': 'Legal notice & privacy — Durmisi&Clean',
+    'meta.legal.title': 'Legal notice & privacy | Durmisi&Clean',
     'meta.legal.desc': 'Legal notice and privacy policy of Durmisi&Clean.',
     'lg.title': 'Legal notice & privacy',
     'lg.sub': 'Company details and information on how your data is handled.',
@@ -564,7 +568,7 @@ const I18N = {
     'lg.dp.1.title': 'Data controller',
     'lg.dp.1.text': 'Responsible for the processing of personal data on this website is Durmisi&Clean, reachable via the contact details in the legal notice above.',
     'lg.dp.2.title': 'What data we process',
-    'lg.dp.2.text': 'This website is static and uses no analytics cookies and no tracking services. We collect no personal data on our own initiative. If you use the contact form, the message is composed in your own e-mail programme and sent by you — so the data only reaches us once you actually send that e-mail.',
+    'lg.dp.2.text': 'This website is static and uses no analytics cookies and no tracking services. We collect no personal data on our own initiative. If you use the contact form, the message is composed in your own e-mail programme and sent by you, so the data only reaches us once you actually send that e-mail.',
     'lg.dp.3.title': 'Purpose and retention',
     'lg.dp.3.text': 'Information you send us by e-mail, phone or WhatsApp is processed solely to answer your enquiry and to carry out any resulting work. We keep it only as long as needed for that purpose or as required by statutory retention rules.',
     'lg.dp.4.title': 'Disclosure to third parties',
@@ -601,9 +605,8 @@ const I18N = {
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* private mode */ }
   }
 
-  /* A CONTACT value still carrying a [BRACKETED] token has never been filled in.
-     Linking to it would ship a dead link, so the element is removed instead —
-     better a missing icon than one that lands the visitor on a 404. */
+  /* A [BRACKETED] CONTACT value was never filled in, so drop the element
+     rather than ship a dead link. */
   function isPlaceholder(v) {
     return typeof v === 'string' && /\[[^\]]*\]/.test(v);
   }
@@ -621,6 +624,11 @@ const I18N = {
         return;
       }
       if (v != null) el.setAttribute('href', v);
+    });
+
+    // Drop a social row that lost every one of its links.
+    (root || document).querySelectorAll('.socials').forEach(function (el) {
+      if (!el.querySelector('a')) el.remove();
     });
   }
 

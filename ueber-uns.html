@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-i18n="meta.about.title">Über uns — Durmisi&amp;Clean</title>
+<title data-i18n="meta.about.title">Über uns | Durmisi&amp;Clean</title>
 <meta name="description" data-i18n-attr="content:meta.about.desc" content="Wer hinter Durmisi&amp;Clean steht: ein familiengeführter Reinigungsbetrieb mit festen Teams, fairen Anstellungen und verbindlichen Preisen.">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0c1526">
-<meta property="og:title" content="Über uns — Durmisi&amp;Clean">
+<meta property="og:title" content="Über uns | Durmisi&amp;Clean">
 <meta property="og:description" content="Familiengeführter Reinigungsbetrieb mit festen Teams, fairen Anstellungen und verbindlichen Preisen.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
@@ -20,9 +21,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 <script>
-  /* Runs before first paint: applies the stored language so English visitors
-     never see a flash of German. The timer is a failsafe — if i18n.js fails to
-     load, it un-hides the page rather than leaving it blank. */
+  /* Apply the stored language before first paint; the timeout reveals the page if i18n.js never loads. */
   try {
     var d = document.documentElement;
     if (localStorage.getItem('dc-lang') === 'en') {
@@ -119,8 +118,8 @@
         <div>
           <span class="eyebrow" data-i18n="ab.story.eyebrow">Unsere Geschichte</span>
           <h2 data-i18n="ab.story.title">Gelernt, geprüft, seit zehn Jahren im Einsatz</h2>
-          <p class="lead mt-sm" data-i18n="ab.story.p1">Hinter Durmisi&amp;Clean steht eine abgeschlossene Ausbildung zum Fachmann Betriebsunterhalt EFZ — dem eidgenössischen Fähigkeitszeugnis für Gebäudeunterhalt und Reinigung — sowie zehn Jahre Berufserfahrung in genau diesem Feld.</p>
-          <p class="mt-sm text-muted" data-i18n="ab.story.p2">Diese Ausbildung ist der Unterschied zwischen Putzen und Werterhalt. Wer weiss, welches Mittel auf welchen Belag gehört, verhindert Schäden, statt sie zu verursachen — an Parkett, Naturstein, Chromstahl oder empfindlichen Oberflächen.</p>
+          <p class="lead mt-sm" data-i18n="ab.story.p1">Hinter Durmisi&amp;Clean steht eine abgeschlossene Ausbildung zum Fachmann Betriebsunterhalt EFZ, dem eidgenössischen Fähigkeitszeugnis für Gebäudeunterhalt und Reinigung, sowie zehn Jahre Berufserfahrung in genau diesem Feld.</p>
+          <p class="mt-sm text-muted" data-i18n="ab.story.p2">Diese Ausbildung ist der Unterschied zwischen Putzen und Werterhalt. Wer weiss, welches Mittel auf welchen Belag gehört, verhindert Schäden, statt sie zu verursachen, sei es an Parkett, Naturstein, Chromstahl oder empfindlichen Oberflächen.</p>
           <p class="mt-sm text-muted" data-i18n="ab.story.p3">Heute arbeiten vier feste Mitarbeitende im Team. Alle sind ordentlich angestellt, eingearbeitet und einem festen Kundenkreis zugeteilt: Privathaushalte, Büros und Liegenschaften in der ganzen Region.</p>
         </div>
       </div>
@@ -132,7 +131,7 @@
       <div class="section-head is-centered">
         <span class="eyebrow is-centered" data-i18n="ab.qual.eyebrow">Qualifikation</span>
         <h2 data-i18n="ab.qual.title">Gelernt, nicht angelernt</h2>
-        <p class="lead" data-i18n="ab.qual.p">Reinigung ist in der Schweiz ein Lehrberuf. Der Unterschied zwischen Putzen und fachgerechtem Werterhalt liegt in Materialkunde, Dosierung, Maschinenführung und Arbeitssicherheit — alles Teil der eidgenössischen Ausbildung.</p>
+        <p class="lead" data-i18n="ab.qual.p">Reinigung ist in der Schweiz ein Lehrberuf. Der Unterschied zwischen Putzen und fachgerechtem Werterhalt liegt in Materialkunde, Dosierung, Maschinenführung und Arbeitssicherheit. Das alles ist Teil der eidgenössischen Ausbildung.</p>
       </div>
 
       <div class="grid grid--3">
@@ -145,7 +144,7 @@
         <div class="feature">
           <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
           <h3 data-i18n="ab.q2.title">10 Jahre Berufserfahrung</h3>
-          <p data-i18n="ab.q2.text">Zehn Jahre in der Reinigungs- und Unterhaltsbranche — von der wiederkehrenden Unterhaltsreinigung über Umzugsobjekte bis zur Bauendreinigung.</p>
+          <p data-i18n="ab.q2.text">Zehn Jahre in der Reinigungs- und Unterhaltsbranche, von der wiederkehrenden Unterhaltsreinigung über Umzugsobjekte bis zur Bauendreinigung.</p>
         </div>
 
         <div class="feature">
@@ -170,7 +169,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </span>
           <h3 data-i18n="ab.v1.title">Verlässlichkeit</h3>
-          <p data-i18n="ab.v1.text">Ein vereinbarter Termin ist ein Versprechen. Wenn etwas dazwischenkommt, erfahren Sie es von uns — und zwar bevor Sie darauf warten.</p>
+          <p data-i18n="ab.v1.text">Ein vereinbarter Termin ist ein Versprechen. Wenn etwas dazwischenkommt, erfahren Sie es von uns, und zwar bevor Sie darauf warten.</p>
         </div>
 
         <div class="feature">
@@ -194,7 +193,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </span>
           <h3 data-i18n="ab.v4.title">Ehrliche Preise</h3>
-          <p data-i18n="ab.v4.text">Der Preis in der Offerte ist der Preis auf der Rechnung. Wird etwas teurer, fragen wir vorher — nicht nachher.</p>
+          <p data-i18n="ab.v4.text">Der Preis in der Offerte ist der Preis auf der Rechnung. Wird etwas teurer, fragen wir vorher, nicht nachher.</p>
         </div>
       </div>
     </div>
@@ -233,7 +232,7 @@
       <div class="split split--wide-right">
         <div class="split__media media-stack is-first">
           <div class="media-frame media-frame--wide">
-            <img src="assets/img/about.jpg" width="1200" height="900" loading="lazy" alt="">
+            <img src="assets/img/about.jpg" width="1200" height="900" loading="lazy" data-i18n-attr="alt:img.about.alt" alt="Reinigungskraft von Durmisi&amp;Clean zieht blaue Schutzhandschuhe an">
           </div>
         </div>
         <div>
@@ -253,7 +252,7 @@
     <div class="container">
       <div class="ctaband">
         <h2 data-i18n="final.title">Holen Sie sich Ihre kostenlose Offerte.</h2>
-        <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale — ohne Verpflichtung.</p>
+        <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale, ohne Verpflichtung.</p>
         <div class="btn-row">
           <a class="btn btn--accent btn--lg" href="kontakt.html">
             <span data-i18n="cta.quoteLong">Jetzt kostenlose Offerte anfordern</span>

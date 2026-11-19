@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-i18n="meta.contact.title">Kontakt — Durmisi&amp;Clean</title>
+<title data-i18n="meta.contact.title">Kontakt | Durmisi&amp;Clean</title>
 <meta name="description" data-i18n-attr="content:meta.contact.desc" content="Kontaktieren Sie Durmisi&amp;Clean für eine kostenlose und unverbindliche Offerte. Antwort innert 24 Stunden.">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0c1526">
-<meta property="og:title" content="Kontakt — Durmisi&amp;Clean">
+<meta property="og:title" content="Kontakt | Durmisi&amp;Clean">
 <meta property="og:description" content="Kostenlose und unverbindliche Offerte. Antwort innert 24 Stunden.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
@@ -20,9 +21,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 <script>
-  /* Runs before first paint: applies the stored language so English visitors
-     never see a flash of German. The timer is a failsafe — if i18n.js fails to
-     load, it un-hides the page rather than leaving it blank. */
+  /* Apply the stored language before first paint; the timeout reveals the page if i18n.js never loads. */
   try {
     var d = document.documentElement;
     if (localStorage.getItem('dc-lang') === 'en') {
@@ -104,7 +103,7 @@
         <span data-i18n="nav.contact">Kontakt</span>
       </nav>
       <h1 data-i18n="ct.title">Sprechen wir über Ihr Objekt</h1>
-      <p class="lead on-dark" data-i18n="ct.sub">Rufen Sie an, schreiben Sie uns oder füllen Sie das Formular aus. Sie erhalten innert 24 Stunden eine Antwort — mit einer verbindlichen Pauschale, kostenlos und unverbindlich.</p>
+      <p class="lead on-dark" data-i18n="ct.sub">Rufen Sie an, schreiben Sie uns oder füllen Sie das Formular aus. Sie erhalten innert 24 Stunden eine Antwort mit einer verbindlichen Pauschale, kostenlos und unverbindlich.</p>
     </div>
   </section>
 

@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-i18n="meta.home.title">Durmisi&amp;Clean — Professionelle Reinigung in der Schweiz</title>
+<title data-i18n="meta.home.title">Durmisi&amp;Clean | Professionelle Reinigung in der Schweiz</title>
 <meta name="description" data-i18n-attr="content:meta.home.desc" content="Unterhaltsreinigung, Umzugsreinigung, Fenster-, Bau-, Büro- und Grundreinigung in der Schweiz. Kostenlose Offerte innert 24 Stunden.">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0c1526">
-<meta property="og:title" content="Durmisi&amp;Clean — Professionelle Reinigung in der Schweiz">
+<meta property="og:title" content="Durmisi&amp;Clean | Professionelle Reinigung in der Schweiz">
 <meta property="og:description" content="Gründlich, pünktlich und mit verbindlichen Pauschalpreisen. Kostenlose Offerte innert 24 Stunden.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
@@ -34,9 +35,24 @@
     "@type": "PostalAddress",
     "streetAddress": "Imstlerwäg 22",
     "addressLocality": "Rafz",
+    "addressRegion": "ZH",
     "addressCountry": "CH",
     "postalCode": "8197"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.6125,
+    "longitude": 8.5369
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Kanton Zürich" },
+    { "@type": "City", "name": "Rafz" },
+    { "@type": "City", "name": "Bülach" },
+    { "@type": "City", "name": "Eglisau" },
+    { "@type": "City", "name": "Schaffhausen" }
+  ],
+  "priceRange": "$$",
+  "sameAs": ["https://wa.me/41767582620"],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -60,9 +76,7 @@
 }
 </script>
 <script>
-  /* Runs before first paint: applies the stored language so English visitors
-     never see a flash of German. The timer is a failsafe — if i18n.js fails to
-     load, it un-hides the page rather than leaving it blank. */
+  /* Apply the stored language before first paint; the timeout reveals the page if i18n.js never loads. */
   try {
     var d = document.documentElement;
     if (localStorage.getItem('dc-lang') === 'en') {
@@ -145,7 +159,7 @@
     <div class="container">
       <div class="hero__inner">
         <h1 data-i18n="hero.title">Wir reinigen, damit Sie <span class="hl-underline">durchatmen</span> können.</h1>
-        <p class="hero__sub" data-i18n="hero.sub">Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften — gründlich, pünktlich und mit verbindlichen Pauschalpreisen.</p>
+        <p class="hero__sub" data-i18n="hero.sub">Professionelle Reinigung für Privathaushalte, Büros und Liegenschaften: gründlich, pünktlich und mit verbindlichen Pauschalpreisen.</p>
 
         <div class="btn-row">
           <a class="btn btn--accent btn--lg" href="kontakt.html">
@@ -166,7 +180,7 @@
       <div class="section-head is-centered">
         <span class="eyebrow is-centered" data-i18n="services.eyebrow">Unsere Leistungen</span>
         <h2 data-i18n="services.title">Ein Partner für jede Art von Reinigung</h2>
-        <p class="lead" data-i18n="services.sub">Vom wöchentlichen Unterhalt bis zur Bauendreinigung — alles aus einer Hand, mit festen Teams und verbindlichen Pauschalpreisen.</p>
+        <p class="lead" data-i18n="services.sub">Vom wöchentlichen Unterhalt bis zur Bauendreinigung: alles aus einer Hand, mit festen Teams und verbindlichen Pauschalpreisen.</p>
       </div>
 
       <div class="grid grid--auto">
@@ -178,7 +192,7 @@
           </div>
           <div class="card__body">
             <h3 data-i18n="svc.unterhalt.name">Unterhaltsreinigung</h3>
-            <p data-i18n="svc.unterhalt.short">Regelmässige Reinigung nach festem Plan — täglich, wöchentlich oder nach Absprache. Immer dasselbe Team, immer derselbe Standard.</p>
+            <p data-i18n="svc.unterhalt.short">Regelmässige Reinigung nach festem Plan: täglich, wöchentlich oder nach Absprache. Immer dasselbe Team, immer derselbe Standard.</p>
             <a class="link-arrow" href="leistungen.html#unterhaltsreinigung">
               <span data-i18n="cta.details">Mehr erfahren</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -193,7 +207,7 @@
           </div>
           <div class="card__body">
             <h3 data-i18n="svc.umzug.name">Umzugsreinigung</h3>
-            <p data-i18n="svc.umzug.short">Wohnungs- und Hausreinigung bei Ein- und Auszug — gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.</p>
+            <p data-i18n="svc.umzug.short">Wohnungs- und Hausreinigung bei Ein- und Auszug. Gründlich und nach fester Checkliste, damit beim Auszug alles bereit ist.</p>
             <a class="link-arrow" href="leistungen.html#umzugsreinigung">
               <span data-i18n="cta.details">Mehr erfahren</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -208,7 +222,7 @@
           </div>
           <div class="card__body">
             <h3 data-i18n="svc.fenster.name">Fensterreinigung</h3>
-            <p data-i18n="svc.fenster.short">Glas, Rahmen, Storen und Rollläden — streifenfrei innen wie aussen, auch in schwer zugänglichen Lagen.</p>
+            <p data-i18n="svc.fenster.short">Glas, Rahmen, Storen und Rollläden: streifenfrei innen wie aussen, auch in schwer zugänglichen Lagen.</p>
             <a class="link-arrow" href="leistungen.html#fensterreinigung">
               <span data-i18n="cta.details">Mehr erfahren</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -238,7 +252,7 @@
           </div>
           <div class="card__body">
             <h3 data-i18n="svc.buero.name">Büroreinigung</h3>
-            <p data-i18n="svc.buero.short">Diskrete Reinigung von Büros, Praxen und Gewerberäumen — ausserhalb Ihrer Geschäftszeiten, ohne Unterbruch im Betrieb.</p>
+            <p data-i18n="svc.buero.short">Diskrete Reinigung von Büros, Praxen und Gewerberäumen, ausserhalb Ihrer Geschäftszeiten und ohne Unterbruch im Betrieb.</p>
             <a class="link-arrow" href="leistungen.html#bueroreinigung">
               <span data-i18n="cta.details">Mehr erfahren</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
@@ -270,7 +284,7 @@
       <div class="split split--wide-right">
         <div class="split__media media-stack is-first">
           <div class="media-frame media-frame--tall">
-            <img src="assets/img/about.jpg" width="1200" height="900" loading="lazy" alt="">
+            <img src="assets/img/about.jpg" width="1200" height="900" loading="lazy" data-i18n-attr="alt:img.about.alt" alt="Reinigungskraft von Durmisi&amp;Clean zieht blaue Schutzhandschuhe an">
           </div>
         </div>
 
@@ -311,7 +325,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
               </span>
               <h3 data-i18n="why.4.title">Ökologische Reinigungsmittel</h3>
-              <p data-i18n="why.4.text">Biologisch abbaubare Produkte, sicher für Kinder, Haustiere und Allergikerinnen und Allergiker — ohne Kompromiss beim Ergebnis.</p>
+              <p data-i18n="why.4.text">Biologisch abbaubare Produkte, sicher für Kinder, Haustiere und Allergikerinnen und Allergiker, ohne Kompromiss beim Ergebnis.</p>
             </div>
           </div>
         </div>
@@ -329,7 +343,7 @@
       <div class="steps">
         <div class="step">
           <h3 data-i18n="process.1.title">Anfrage</h3>
-          <p data-i18n="process.1.text">Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden — auch am Wochenende.</p>
+          <p data-i18n="process.1.text">Sie melden sich per Telefon, Formular oder WhatsApp. Wir antworten innert 24 Stunden, auch am Wochenende.</p>
         </div>
         <div class="step">
           <h3 data-i18n="process.2.title">Besichtigung &amp; Offerte</h3>
@@ -337,7 +351,7 @@
         </div>
         <div class="step">
           <h3 data-i18n="process.3.title">Reinigung</h3>
-          <p data-i18n="process.3.text">Das Team kommt zum vereinbarten Termin — mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.</p>
+          <p data-i18n="process.3.text">Das Team kommt zum vereinbarten Termin, mit eigenen Maschinen, eigenem Material und einer klaren Checkliste.</p>
         </div>
       </div>
     </div>
@@ -357,7 +371,7 @@
             <span class="faq__icon" aria-hidden="true"></span>
           </button>
           <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1" aria-hidden="true"><div>
-            <p data-i18n="faq.1.a">Der Preis richtet sich nach Grösse und Zustand des Objekts sowie danach, ob Fenster, Storen und Balkon dazugehören. Sie erhalten vor dem Start immer eine verbindliche Pauschale — kostenlos und unverbindlich. Richtwerte für Ihre Wohnungsgrösse nennen wir Ihnen gerne direkt am Telefon.</p>
+            <p data-i18n="faq.1.a">Der Preis richtet sich nach Grösse und Zustand des Objekts sowie danach, ob Fenster, Storen und Balkon dazugehören. Sie erhalten vor dem Start immer eine verbindliche Pauschale, kostenlos und unverbindlich. Richtwerte für Ihre Wohnungsgrösse nennen wir Ihnen gerne direkt am Telefon.</p>
           </div></div>
         </div>
 
@@ -367,7 +381,7 @@
             <span class="faq__icon" aria-hidden="true"></span>
           </button>
           <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2" aria-hidden="true"><div>
-            <p data-i18n="faq.2.a">Unterhaltsreinigungen starten wir in der Regel innert einer Woche. Umzugsreinigungen planen wir idealerweise zwei bis drei Wochen im Voraus. Kurzfristige Termine sind auf Anfrage oft möglich — fragen Sie einfach nach.</p>
+            <p data-i18n="faq.2.a">Unterhaltsreinigungen starten wir in der Regel innert einer Woche. Umzugsreinigungen planen wir idealerweise zwei bis drei Wochen im Voraus. Kurzfristige Termine sind auf Anfrage oft möglich. Fragen Sie einfach nach.</p>
           </div></div>
         </div>
 
@@ -418,7 +432,7 @@
     <div class="container">
       <div class="ctaband">
         <h2 data-i18n="final.title">Holen Sie sich Ihre kostenlose Offerte.</h2>
-        <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale — ohne Verpflichtung.</p>
+        <p class="lead" data-i18n="final.sub">Beschreiben Sie uns kurz, worum es geht. Sie erhalten innert 24 Stunden eine verbindliche Pauschale, ohne Verpflichtung.</p>
         <div class="btn-row">
           <a class="btn btn--accent btn--lg" href="kontakt.html">
             <span data-i18n="cta.quoteLong">Jetzt kostenlose Offerte anfordern</span>
